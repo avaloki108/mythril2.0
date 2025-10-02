@@ -343,25 +343,30 @@ async def list_detectors_tool(arguments: Dict[str, Any]) -> list[TextContent]:
         )]
 
 
-async def main():
+def main():
     """Run the MCP server."""
-    # Configure logging
-    logging.basicConfig(
-        level=logging.INFO,
-        format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-        stream=sys.stderr  # Log to stderr to keep stdout clean for MCP protocol
-    )
+    import asyncio
     
-    log.info("Starting Mythril MCP Server")
-    
-    async with stdio_server() as (read_stream, write_stream):
-        await app.run(
-            read_stream,
-            write_stream,
-            app.create_initialization_options()
+    async def run_server():
+        """Run the async MCP server."""
+        # Configure logging
+        logging.basicConfig(
+            level=logging.INFO,
+            format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+            stream=sys.stderr  # Log to stderr to keep stdout clean for MCP protocol
         )
+        
+        log.info("Starting Mythril MCP Server")
+        
+        async with stdio_server() as (read_stream, write_stream):
+            await app.run(
+                read_stream,
+                write_stream,
+                app.create_initialization_options()
+            )
+    
+    asyncio.run(run_server())
 
 
 if __name__ == "__main__":
-    import asyncio
-    asyncio.run(main())
+    main()
