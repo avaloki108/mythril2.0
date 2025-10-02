@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "mythril": {
+      "command": "mythril-mcp-server",
+      "args": []
+    }
+  }
+}
