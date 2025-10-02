@@ -130,6 +130,11 @@ setup(
     extras_require=EXTRAS,
     package_data={"mythril.analysis.templates": ["*"], "mythril.support.assets": ["*"]},
     include_package_data=True,
-    entry_points={"console_scripts": ["myth=mythril.interfaces.cli:main"]},
+    entry_points={
+        "console_scripts": [
+            "myth=mythril.interfaces.cli:main",
+            "mythril-mcp-server=mythril.mcp_server:main"
+        ]
+    },
     cmdclass={"verify": VerifyVersionCommand},
 )
