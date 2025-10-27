@@ -26,32 +26,35 @@ here = os.path.abspath(os.path.dirname(__file__))
 
 
 # What packages are required for this module to be executed?
-def get_requirements():
-    """
-    Return requirements as list.
-    Handles cases where git links are used.
-
-    """
-    with open(os.path.join(here, "requirements.txt")) as f:
-        packages = []
-        for line in f:
-            line = line.strip()
-            # let's also ignore empty lines and comments
-            if not line or line.startswith("#"):
-                continue
-            if "https://" not in line:
-                packages.append(line)
-                continue
-
-            rest, package_name = line.split("#egg=")[0], line.split("#egg=")[1]
-            if "-e" in rest:
-                rest = rest.split("-e")[1]
-            package_name = package_name + "@" + rest
-            packages.append(package_name)
-    return packages
-
-
-REQUIRED = get_requirements()
+REQUIRED = [
+    "blake2b-py>=0.2.0,<1",
+    "coloredlogs>=10.0",
+    "coincurve>=13.0.0",
+    "cytoolz>=0.12.0",
+    "asn1crypto>=0.22.0",
+    "configparser>=3.5.0",
+    "py_ecc>=5.0.0",
+    "eth-abi>=5.1.0",
+    "eth-hash>=0.3.1,<0.8.0",
+    "eth-utils>=2.0.0",
+    "hexbytes<1.4.0",
+    "jinja2>=2.9",
+    "MarkupSafe<3.1.0",
+    "mypy-extensions==1.0.0",
+    "numpy",
+    "persistent>=4.2.0",
+    "py-flags",
+    "py-evm==0.10.1b2",
+    "py-solc-x<3.0.0",
+    "py-solc",
+    "pyparsing>=2.0.2,<4",
+    "requests",
+    "rlp>=3,<5",
+    "semantic_version",
+    "z3-solver>=4.8.8.0,<=4.13.4.0",
+    "matplotlib",
+    "certifi>=2020.06.20",
+]
 
 TESTS_REQUIRE = ["mypy==0.782", "pytest>=3.6.0", "pytest_mock", "pytest-cov"]
 
@@ -107,7 +110,7 @@ setup(
     long_description_content_type="text/markdown",  # requires twine and recent setuptools
     url=URL,
     author=AUTHOR,
-    author_mail=AUTHOR_MAIL,
+    author_email=AUTHOR_MAIL,
     license="MIT",
     classifiers=[
         "Development Status :: 3 - Alpha",
