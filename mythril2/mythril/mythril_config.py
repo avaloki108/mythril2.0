@@ -39,7 +39,7 @@ class MythrilConfig:
         try:
             mythril_dir = os.environ["MYTHRIL_DIR"]
         except KeyError:
-            mythril_dir = os.path.join(os.path.expanduser("~"), ".mythril")
+            mythril_dir = os.path.join(os.path.expanduser("~"), ".mythril2")
 
         if not os.path.exists(mythril_dir):
             # Initialize data directory
