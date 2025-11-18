@@ -1,7 +1,7 @@
 import pytest
 from eth_utils import big_endian_to_int, decode_hex
 
-from mythril.laser.ethereum.natives import mod_exp
+from mythril2.laser.ethereum.natives import mod_exp
 
 EIP198_VECTOR_A = decode_hex(
     "0000000000000000000000000000000000000000000000000000000000000001"

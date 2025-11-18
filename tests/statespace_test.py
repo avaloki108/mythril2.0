@@ -1,8 +1,8 @@
 from types import SimpleNamespace
 
-from mythril.ethereum import util
-from mythril.mythril import MythrilAnalyzer, MythrilDisassembler
-from mythril.solidity.soliditycontract import EVMContract
+from mythril2.ethereum import util
+from mythril2.mythril import MythrilAnalyzer, MythrilDisassembler
+from mythril2.solidity.soliditycontract import EVMContract
 from tests import TESTDATA_INPUTS
 
 

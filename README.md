@@ -1,4 +1,4 @@
-# Mythril
+# Mythril 2.0
 
 <p align="center">
 	<img src="/static/mythril_new.png" height="320px"/>
@@ -27,7 +27,7 @@ $ docker pull mythril/myth
 Install from Pypi (Python 3.7-3.10):
 
 ```bash
-$ pip3 install mythril
+$ pip3 install mythril2
 ```
 
 Use it via pre-commit hook (replace `$GIT_TAG` with real tag):
@@ -36,7 +36,7 @@ Use it via pre-commit hook (replace `$GIT_TAG` with real tag):
 - repo: https://github.com/Consensys/mythril
   rev: $GIT_TAG
   hooks:
-    - id: mythril
+    - id: mythril2
 ```
 
 Additionally, set `args: [disassemble]` or `args: [read-storage]` to use a different command than `analyze`.
@@ -48,13 +48,13 @@ See the [docs](https://mythril-classic.readthedocs.io/en/master/installation.htm
 Run:
 
 ```
-$ myth analyze <solidity-file>
+$ myth2 analyze <solidity-file>
 ```
 
 Or:
 
 ```
-$ myth analyze -a <contract-address>
+$ myth2 analyze -a <contract-address>
 ```
 
 Specify the maximum number of transactions to explore with `-t <number>`. You can also set a timeout with `--execution-timeout <seconds>`.
@@ -62,7 +62,7 @@ Specify the maximum number of transactions to explore with `-t <number>`. You ca
 Here is an example of running Mythril on the file `killbilly.sol` which is in the `solidity_examples` directory for `3` transactions:
 
 ```
-> myth a killbilly.sol -t 3
+> myth2 a killbilly.sol -t 3
 ==== Unprotected Selfdestruct ====
 SWC ID: 106
 Severity: High

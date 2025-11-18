@@ -27,7 +27,7 @@ author = "ConsenSys Dilligence"
 # The short X.Y version
 version = ""
 # The full version, including alpha/beta/rc tags
-from mythril.__version__ import __version__ as VERSION
+from mythril2.__version__ import __version__ as VERSION
 
 release = VERSION
 

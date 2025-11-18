@@ -1,6 +1,6 @@
 import pytest
 
-from mythril.laser.ethereum.natives import identity
+from mythril2.laser.ethereum.natives import identity
 
 
 @pytest.mark.parametrize(

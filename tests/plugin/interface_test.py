@@ -1,4 +1,4 @@
-from mythril.plugin.interface import MythrilCLIPlugin, MythrilPlugin
+from mythril2.plugin.interface import MythrilCLIPlugin, MythrilPlugin
 
 
 def test_construct_cli_plugin():

@@ -5,14 +5,14 @@ from pathlib import Path
 
 import pytest
 
-from mythril.disassembler.disassembly import Disassembly
-from mythril.laser.ethereum.state.account import Account
-from mythril.laser.ethereum.state.world_state import WorldState
-from mythril.laser.ethereum.svm import LaserEVM
-from mythril.laser.ethereum.time_handler import time_handler
-from mythril.laser.ethereum.transaction.concolic import execute_message_call
-from mythril.laser.smt import Expression, symbol_factory
-from mythril.support.support_args import args
+from mythril2.disassembler.disassembly import Disassembly
+from mythril2.laser.ethereum.state.account import Account
+from mythril2.laser.ethereum.state.world_state import WorldState
+from mythril2.laser.ethereum.svm import LaserEVM
+from mythril2.laser.ethereum.time_handler import time_handler
+from mythril2.laser.ethereum.transaction.concolic import execute_message_call
+from mythril2.laser.smt import Expression, symbol_factory
+from mythril2.support.support_args import args
 
 evm_test_dir = Path(__file__).parent / "VMTests"
 

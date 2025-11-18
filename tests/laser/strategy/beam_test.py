@@ -1,12 +1,12 @@
 import pytest
 
-from mythril.analysis.potential_issues import PotentialIssuesAnnotation
-from mythril.disassembler.disassembly import Disassembly
-from mythril.laser.ethereum.state.environment import Environment
-from mythril.laser.ethereum.state.global_state import GlobalState
-from mythril.laser.ethereum.state.machine_state import MachineState
-from mythril.laser.ethereum.state.world_state import WorldState
-from mythril.laser.ethereum.strategy.beam import (
+from mythril2.analysis.potential_issues import PotentialIssuesAnnotation
+from mythril2.disassembler.disassembly import Disassembly
+from mythril2.laser.ethereum.state.environment import Environment
+from mythril2.laser.ethereum.state.global_state import GlobalState
+from mythril2.laser.ethereum.state.machine_state import MachineState
+from mythril2.laser.ethereum.state.world_state import WorldState
+from mythril2.laser.ethereum.strategy.beam import (
     BeamSearch,
 )
 

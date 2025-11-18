@@ -1,8 +1,8 @@
 import pytest
 from z3 import unsat
 
-from mythril.laser.ethereum.state.calldata import ConcreteCalldata, SymbolicCalldata
-from mythril.laser.smt import Solver, symbol_factory
+from mythril2.laser.ethereum.state.calldata import ConcreteCalldata, SymbolicCalldata
+from mythril2.laser.smt import Solver, symbol_factory
 
 uninitialized_test_data = [
     ([]),  # Empty concrete calldata

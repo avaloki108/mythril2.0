@@ -3,7 +3,7 @@ import sys
 
 import pytest
 
-from mythril.interfaces.cli import main
+from mythril2.interfaces.cli import main
 
 
 def test_version_opt(capsys):

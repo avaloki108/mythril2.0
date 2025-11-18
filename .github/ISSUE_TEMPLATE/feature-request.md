@@ -1,6 +1,6 @@
 ---
 name: Feature Request
-about: Tell us about a new feature that would make Mythril better
+about: Tell us about a new feature that would make Mythril 2.0 better
 
 ---
 

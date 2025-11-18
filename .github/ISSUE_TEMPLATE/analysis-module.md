@@ -9,7 +9,7 @@ about: Create an analysis module feature request
 ## Description
 
 <!-- Add a description of an vulnerability that should be
-detected by a Mythril analysis module. -->
+detected by a Mythril 2.0 analysis module. -->
 
 ## Tests
 

@@ -1,14 +1,14 @@
 import pytest
 
-from mythril.disassembler.disassembly import Disassembly
-from mythril.laser.ethereum.instructions import Instruction
-from mythril.laser.ethereum.state.calldata import ConcreteCalldata
-from mythril.laser.ethereum.state.environment import Environment
-from mythril.laser.ethereum.state.global_state import GlobalState
-from mythril.laser.ethereum.state.machine_state import MachineState
-from mythril.laser.ethereum.state.world_state import WorldState
-from mythril.laser.ethereum.time_handler import time_handler
-from mythril.laser.ethereum.transaction.transaction_models import (
+from mythril2.disassembler.disassembly import Disassembly
+from mythril2.laser.ethereum.instructions import Instruction
+from mythril2.laser.ethereum.state.calldata import ConcreteCalldata
+from mythril2.laser.ethereum.state.environment import Environment
+from mythril2.laser.ethereum.state.global_state import GlobalState
+from mythril2.laser.ethereum.state.machine_state import MachineState
+from mythril2.laser.ethereum.state.world_state import WorldState
+from mythril2.laser.ethereum.time_handler import time_handler
+from mythril2.laser.ethereum.transaction.transaction_models import (
     MessageCallTransaction,
     TransactionStartSignal,
 )

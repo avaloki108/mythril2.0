@@ -1,7 +1,7 @@
 from pathlib import Path
 
-from mythril.mythril import MythrilDisassembler
-from mythril.solidity.soliditycontract import SolidityContract
+from mythril2.mythril import MythrilDisassembler
+from mythril2.solidity.soliditycontract import SolidityContract
 from tests import BaseTestCase
 
 TEST_FILES = Path(__file__).parent / "testdata/input_contracts"

@@ -2,9 +2,9 @@ from pathlib import Path
 
 import pytest
 
-from mythril.mythril import MythrilDisassembler
-from mythril.solidity.features import SolidityFeatureExtractor
-from mythril.solidity.soliditycontract import SolidityContract
+from mythril2.mythril import MythrilDisassembler
+from mythril2.solidity.features import SolidityFeatureExtractor
+from mythril2.solidity.soliditycontract import SolidityContract
 
 TEST_FILES = Path(__file__).parent / "testdata/input_contracts"
 solc_binary_5 = MythrilDisassembler._init_solc_binary("v0.5.0")

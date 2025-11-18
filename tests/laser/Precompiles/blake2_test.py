@@ -1,6 +1,6 @@
 import pytest
 
-from mythril.laser.ethereum.natives import blake2b_fcompress
+from mythril2.laser.ethereum.natives import blake2b_fcompress
 
 
 # Test cases taken from https://eips.ethereum.org/EIPS/eip-152.
