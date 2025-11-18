@@ -27,5 +27,5 @@ jobs:
       - name: build and test
         run: |
           # when no DOCKERHUB_USERNAME is set, this only builds the
-          # container and runs the myth-smoke-test
-          ./docker_build_and_deploy.sh mythril/myth-dev
+          # container and runs the myth2-smoke-test
+          ./docker_build_and_deploy.sh mythril2/myth2-dev

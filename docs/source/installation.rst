@@ -35,31 +35,31 @@ PyPI on Ubuntu
 
    # Install mythril
    pip3 install mythril
-   myth version
+   myth2 version
 
 
 ******
 Docker
 ******
 
-All Mythril releases, starting from v0.18.3, are published to DockerHub as Docker images under the :code:`mythril/myth` name.
+All Mythril releases, starting from v0.18.3, are published to DockerHub as Docker images under the :code:`mythril2/myth2` name.
 
 After installing `Docker CE <https://docs.docker.com/install/>`_:
 
    .. code-block:: bash
 
-      # Pull the latest release of mythril/myth
-      $ docker pull mythril/myth
+      # Pull the latest release of mythril2/myth2
+      $ docker pull mythril2/myth2
 
-Use :code:`docker run mythril/myth` the same way you would use the :code:`myth` command
+Use :code:`docker run mythril2/myth2` the same way you would use the :code:`myth` command
 
    .. code-block:: bash
 
-      docker run mythril/myth --help
-      docker run mythril/myth disassemble -c "0x6060"
+      docker run mythril2/myth2 --help
+      docker run mythril2/myth2 disassemble -c "0x6060"
 
 To pass a file from your host machine to the dockerized Mythril, you must mount its containing folder to the container properly. For :code:`contract.sol` in the current working directory, do:
 
    .. code-block:: bash
 
-      docker run -v $(pwd):/tmp mythril/myth analyze /tmp/contract.sol
+      docker run -v $(pwd):/tmp mythril2/myth22 analyze /tmp/contract.sol

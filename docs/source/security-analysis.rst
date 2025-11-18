@@ -1,7 +1,7 @@
 Security Analysis
 =================
 
-Running :code:`myth analyze` with one of the input options described below will run the analysis modules in the `/analysis/modules <https://github.com/ConsenSys/mythril/tree/master/mythril/analysis/modules>`_ directory.
+Running :code:`myth2 analyze` with one of the input options described below will run the analysis modules in the `/analysis/modules <https://github.com/ConsenSys/mythril/tree/master/mythril/analysis/modules>`_ directory.
 
 ***********************
 Analyzing Solidity Code
@@ -11,7 +11,7 @@ In order to work with Solidity source code files, the `solc command line compile
 
 .. code-block:: bash
 
-   $ myth analyze ether_send.sol
+   $ myth2 analyze ether_send.sol
    ==== Unprotected Ether Withdrawal ====
    SWC ID: 105
    Severity: High
@@ -32,7 +32,7 @@ If an input file contains multiple contract definitions, Mythril analyzes the *l
 
 .. code-block:: bash
 
-   myth analyze OmiseGo.sol:OMGToken
+   myth2 analyze OmiseGo.sol:OMGToken
 
 Specifying Solc Versions
 ########################
@@ -47,7 +47,7 @@ By default, analysis results are printed to the terminal in text format. You can
 
 .. code-block:: bash
 
-   myth analyze underflow.sol -o jsonv2
+   myth2 analyze underflow.sol -o jsonv2
 
 Available formats are :code:`text`, :code:`markdown`, :code:`json`, and :code:`jsonv2`. For integration with other tools, :code:`jsonv2` is generally preferred over :code:`json` because it is consistent with other `MythX <https://mythx.io>`_ tools.
 
@@ -73,13 +73,13 @@ Analyze mainnet contract via INFURA:
 
 .. code-block:: bash
 
-   myth analyze -a 0x5c436ff914c458983414019195e0f4ecbef9e6dd --infura-id <ID>
+   myth2 analyze -a 0x5c436ff914c458983414019195e0f4ecbef9e6dd --infura-id <ID>
 
 You can also use the environment variable `INFURA_ID` instead of the cmd line argument or set it in ~/.mythril/config.ini.
 
 .. code-block:: bash
 
-   myth -v4 analyze -a 0xEbFD99838cb0c132016B9E117563CB41f2B02264 --infura-id <ID>
+   myth2 -v4 analyze -a 0xEbFD99838cb0c132016B9E117563CB41f2B02264 --infura-id <ID>
 
 ******************
 Speed vs. Coverage

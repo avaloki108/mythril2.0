@@ -65,7 +65,7 @@ The sample contract has several functions, some of which contain vulnerabilities
 
     .. code-block:: bash
 
-        $ myth analyze <file_path>
+        $ myth2 analyze <file_path>
 
 The output will show the vulnerabilities in the contract. In the case of the "Exceptions" contract, Mythril detected two instances of assertion violations.
 
@@ -128,7 +128,7 @@ To detect this vulnerability, the transaction count can be increased to four usi
 
 .. code-block:: bash
 
-    $ myth analyze <file_path> -t 4
+    $ myth2 analyze <file_path> -t 4
 
 This gives the following execution output:
 
@@ -222,7 +222,7 @@ in hex, which is 3. For automated resolution of the input try using a different 
 
     .. code-block:: bash
 
-        $ myth analyze <file_path> -o json
+        $ myth2 analyze <file_path> -o json
 
 This leads to the following output:
 
@@ -483,7 +483,7 @@ When this contract is directly executed by using the following command:
 
     .. code-block:: bash
 
-        $ myth analyze <file_path>
+        $ myth2 analyze <file_path>
 
 We encounter the following error:
 
@@ -517,7 +517,7 @@ When you run Mythril, you can use the ``--solc-json`` option to provide the rema
 
     .. code-block:: bash
 
-        $ myth analyze {file_path} --solc-json {json_file_path}
+        $ myth2 analyze {file_path} --solc-json {json_file_path}
 
 
 With this command, Mythril will be able to locate the ``PRC20.sol`` file, and the analysis should proceed without errors. 
@@ -703,7 +703,7 @@ To successfully explore useful transaction sequences we can use Mythril's ``--tr
 
 .. code-block:: bash
 
-    $ myth analyze rubixi.sol -t 3 --transaction-sequences [["0x89b8ae9b"],[-1],["0x686f2c90","0xb4022950","0x4229616d"]]
+    $ myth2 analyze rubixi.sol -t 3 --transaction-sequences [["0x89b8ae9b"],[-1],["0x686f2c90","0xb4022950","0x4229616d"]]
 
 The first transaction is constrained to the function ``dynamicPyramid()``, the second one to the ``fallback()`` function, and finally, the third transaction is constrained to``collectAllFees()``, ``collectFeesInEther(uint256)`` and ``collectPercentOfFees(uint256)``.
 Make sure to use ``-t 3`` argument, since the length of the transaction sequence should match with the transaction count argument.
