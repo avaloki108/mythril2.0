@@ -3,7 +3,7 @@ from unittest.mock import Mock, mock_open, patch
 import numpy as np
 import pytest
 
-from mythril.laser.ethereum.tx_prioritiser import RfTxPrioritiser
+from mythril2.laser.ethereum.tx_prioritiser import RfTxPrioritiser
 
 
 def mock_predict_proba(X):

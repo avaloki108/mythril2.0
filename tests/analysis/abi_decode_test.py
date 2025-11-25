@@ -1,6 +1,6 @@
 import pytest
 
-from mythril.analysis.report import Issue
+from mythril2.analysis.report import Issue
 
 test_data = (
     (

@@ -1,8 +1,8 @@
 import pytest
 import z3
 
-from mythril.laser.ethereum.function_managers import keccak_function_manager
-from mythril.laser.smt import Solver, symbol_factory
+from mythril2.laser.ethereum.function_managers import keccak_function_manager
+from mythril2.laser.smt import Solver, symbol_factory
 
 
 @pytest.mark.parametrize(

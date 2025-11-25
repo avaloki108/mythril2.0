@@ -14,17 +14,17 @@ variable "INSTALLED_SOLC_VERSIONS" {
   default = "0.8.19"
 }
 
-function "myth-tags" {
+function "myth2-tags" {
   params = [NAME]
   result = formatlist("${REGISTRY}/${NAME}:%s", split(",", VERSION))
 }
 
 group "default" {
-  targets = ["myth", "myth-smoke-test"]
+  targets = ["myth2", "myth2-smoke-test"]
 }
 
-target "_myth-base" {
-  target = "myth"
+target "_myth2-base" {
+  target = "myth2"
   args = {
     PYTHON_VERSION = PYTHON_VERSION
     INSTALLED_SOLC_VERSIONS = INSTALLED_SOLC_VERSIONS
@@ -35,18 +35,18 @@ target "_myth-base" {
   ]
 }
 
-target "myth" {
-  inherits = ["_myth-base"]
-  tags = myth-tags("mythril/myth")
+target "myth2" {
+  inherits = ["_myth2-base"]
+  tags = myth2-tags("mythril2/myth2")
 }
 
-target "myth-dev" {
-  inherits = ["_myth-base"]
-  tags = myth-tags("mythril/myth-dev")
+target "myth2-dev" {
+  inherits = ["_myth2-base"]
+  tags = myth2-tags("mythril2/myth2-dev")
 }
 
-target "myth-smoke-test" {
-  inherits = ["_myth-base"]
-  target = "myth-smoke-test"
+target "myth2-smoke-test" {
+  inherits = ["_myth2-base"]
+  target = "myth2-smoke-test"
   output = ["build/docker/smoke-test"]
 }

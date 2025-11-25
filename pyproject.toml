@@ -16,4 +16,4 @@ select = ["F", "I"]
 # * F403: 'from .module import *'
 # (resolvable via __all__ list,
 # see https://docs.python.org/3/tutorial/modules.html#importing-from-a-package)
-"mythril/**/__init__.py" = ["F401", "F403"]
+"mythril2/**/__init__.py" = ["F401", "F403"]

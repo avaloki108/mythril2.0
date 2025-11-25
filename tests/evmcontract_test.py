@@ -1,4 +1,4 @@
-from mythril.ethereum.evmcontract import EVMContract
+from mythril2.ethereum.evmcontract import EVMContract
 from tests import BaseTestCase
 
 

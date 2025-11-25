@@ -1,6 +1,6 @@
 import os
 
-from mythril.disassembler.disassembly import Disassembly
+from mythril2.disassembler.disassembly import Disassembly
 from tests import (
     TESTDATA_INPUTS,
     TESTDATA_OUTPUTS_CURRENT,

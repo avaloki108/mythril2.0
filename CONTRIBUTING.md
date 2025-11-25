@@ -1,14 +1,14 @@
-# Contributing to Mythril
-Hi, if you are reading this that means that you probably want to contribute to Mythril, awesome! If not, then this file might not contain much useful information for you.
+# Contributing to Mythril 2.0
+Hi, if you are reading this that means that you probably want to contribute to Mythril 2.0, awesome! If not, then this file might not contain much useful information for you.
 
 ## Creating an issue
-If you have found a problem with Mythril or want to propose a new feature then you can do this using GitHub issues. 
+If you have found a problem with Mythril 2.0 or want to propose a new feature then you can do this using GitHub issues. 
 We already created some templates to make this process easier, but if your issue/feature request does not fit within the template then feel free to deviate.
 
 If you have a small question or aren't sure if you should create an issue for your problem/suggestion then you can always hop by on our [Discord server](https://discord.gg/FGMkcU2).
 
 # Coding
-If you want to help out with the development of Mythril then you can take a look at our issues or [Waffle board](https://waffle.io/ConsenSys/mythril).
+If you want to help out with the development of Mythril 2.0 then you can take a look at our issues or [Waffle board](https://waffle.io/ConsenSys/mythril).
 
 Before you start working on an issue please stop by on Discord to message a collaborator, this way we can assign you to the issue making sure nobody does double work. We can also provide you with support through Discord if there are any questions during the development process.
 

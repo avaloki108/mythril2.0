@@ -1,0 +1,30 @@
+from mythril2.laser.ethereum.state.global_state import GlobalState
+from mythril2.laser.ethereum.svm import LaserEVM
+from mythril2.laser.plugin.builder import PluginBuilder
+from mythril2.laser.plugin.interface import LaserPlugin
+from mythril2.laser.plugin.signals import PluginSkipState
+
+
+class CallDepthLimitBuilder(PluginBuilder):
+    name = "call-depth-limit"
+
+    def __call__(self, *args, **kwargs):
+        return CallDepthLimit(kwargs["call_depth_limit"])
+
+
+class CallDepthLimit(LaserPlugin):
+    def __init__(self, call_depth_limit: int):
+        self.call_depth_limit = call_depth_limit
+
+    def initialize(self, symbolic_vm: LaserEVM):
+        """Initializes the mutation pruner
+
+        Introduces hooks for SSTORE operations
+        :param symbolic_vm:
+        :return:
+        """
+
+        @symbolic_vm.pre_hook("CALL")
+        def sstore_mutator_hook(global_state: GlobalState):
+            if len(global_state.transaction_stack) - 1 == self.call_depth_limit:
+                raise PluginSkipState

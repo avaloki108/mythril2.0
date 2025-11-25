@@ -1,4 +1,4 @@
-from mythril.mythril import MythrilDisassembler
+from mythril2.mythril import MythrilDisassembler
 
 storage_test = [
     (

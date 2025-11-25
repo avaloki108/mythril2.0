@@ -1,18 +1,18 @@
 import unittest.mock as mock
 from unittest.mock import MagicMock
 
-from mythril.laser.ethereum.state.account import Account
-from mythril.laser.ethereum.state.world_state import WorldState
-from mythril.laser.ethereum.svm import LaserEVM
-from mythril.laser.ethereum.transaction import (
+from mythril2.laser.ethereum.state.account import Account
+from mythril2.laser.ethereum.state.world_state import WorldState
+from mythril2.laser.ethereum.svm import LaserEVM
+from mythril2.laser.ethereum.transaction import (
     ContractCreationTransaction,
     MessageCallTransaction,
 )
-from mythril.laser.ethereum.transaction.symbolic import (
+from mythril2.laser.ethereum.transaction.symbolic import (
     execute_contract_creation,
     execute_message_call,
 )
-from mythril.laser.smt import symbol_factory
+from mythril2.laser.smt import symbol_factory
 
 
 def _is_message_call(_, transaction, transaction_sequences):

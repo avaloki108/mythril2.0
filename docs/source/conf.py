@@ -27,7 +27,7 @@ author = "ConsenSys Dilligence"
 # The short X.Y version
 version = ""
 # The full version, including alpha/beta/rc tags
-from mythril.__version__ import __version__ as VERSION
+from mythril2.__version__ import __version__ as VERSION
 
 release = VERSION
 
@@ -134,8 +134,8 @@ latex_elements = {
 latex_documents = [
     (
         master_doc,
-        "Mythril.tex",
-        "Mythril Documentation",
+        "Mythril2.tex",
+        "Mythril 2.0 Documentation",
         "ConsenSys Dilligence",
         "manual",
     )
@@ -146,7 +146,7 @@ latex_documents = [
 
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
-man_pages = [(master_doc, "mythril", "Mythril Documentation", [author], 1)]
+man_pages = [(master_doc, "mythril2", "Mythril 2.0 Documentation", [author], 1)]
 
 
 # -- Options for Texinfo output ----------------------------------------------
@@ -158,7 +158,7 @@ texinfo_documents = [
     (
         master_doc,
         "Mythril",
-        "Mythril Documentation",
+        "Mythril 2.0 Documentation",
         author,
         "Mythril",
         "One line description of project.",

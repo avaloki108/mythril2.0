@@ -1,7 +1,7 @@
-- id: mythril
-  name: Mythril
-  description: Analyze EVM bytecode with Mythril
-  entry: myth
+- id: mythril2
+  name: Mythril 2.0
+  description: Analyze EVM bytecode with Mythril 2.0
+  entry: myth2
   args:
     - analyze
   language: python

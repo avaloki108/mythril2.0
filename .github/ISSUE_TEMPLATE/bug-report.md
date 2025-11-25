@@ -1,6 +1,6 @@
 ---
 name: Bug report
-about: Tell us about Mythril bugs to help us improve
+about: Tell us about Mythril 2.0 2.0 bugs to help us improve
 
 ---
 
@@ -20,7 +20,7 @@ output you got in describing how to reproduce the bug.
 For example:
 
 ```console
-$ myth <command-line-options>
+$ myth2 <command-line-options>
 ==== Exception state ====
 Type: ...
 Contract: ...
@@ -60,7 +60,7 @@ If applicable, add screenshots to help explain your problem.
 
 Please modify for your setup
 
-- Mythril version: output from  `myth version` or `pip show mythril`
+- Mythril 2.0 version: output from  `myth2 version` or `pip show mythril2`
 - Solidity compiler and version: `solc --version`
 - Python version: `python -V`
 - OS and Version: [e.g. Mac OS High Sierra]

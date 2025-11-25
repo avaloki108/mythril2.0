@@ -1,4 +1,4 @@
-from mythril.ethereum.interface.rpc.client import EthJsonRpc
+from mythril2.ethereum.interface.rpc.client import EthJsonRpc
 from tests import BaseTestCase
 
 

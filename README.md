@@ -1,18 +1,18 @@
-# Mythril
+# Mythril 2.0
 
 <p align="center">
 	<img src="/static/mythril_new.png" height="320px"/>
 </p>
 
 [![Discord](https://img.shields.io/discord/697535391594446898)](https://discord.com/invite/consensys)
-[![PyPI](https://badge.fury.io/py/mythril.svg)](https://pypi.python.org/pypi/mythril)
+[![PyPI](https://badge.fury.io/py/mythril2.svg)](https://pypi.python.org/pypi/mythril2)
 [![Read the Docs](https://readthedocs.org/projects/mythril-classic/badge/?version=master)](https://mythril-classic.readthedocs.io/en/develop/)
 [![CircleCI](https://dl.circleci.com/status-badge/img/gh/Consensys/mythril/tree/develop.svg?style=shield&circle-token=fd6738fd235f6c2d8e10234259090e3b05190d0e)](https://dl.circleci.com/status-badge/redirect/gh/Consensys/mythril/tree/develop)
 [![Sonarcloud - Maintainability](https://sonarcloud.io/api/project_badges/measure?project=mythril&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=mythril)
-[![Pypi Installs](https://static.pepy.tech/badge/mythril)](https://pepy.tech/project/mythril)
-[![DockerHub Pulls](https://img.shields.io/docker/pulls/mythril/myth.svg)](https://cloud.docker.com/u/mythril/repository/docker/mythril/myth)
+[![Pypi Installs](https://static.pepy.tech/badge/mythril2)](https://pepy.tech/project/mythril2)
+[![DockerHub Pulls](https://img.shields.io/docker/pulls/mythril2/myth2.svg)](https://cloud.docker.com/u/mythril2/repository/docker/mythril2/myth2)
 
-Mythril is a symbolic-execution-based security analysis tool for EVM bytecode. It detects security vulnerabilities in smart contracts built for Ethereum and other EVM-compatible blockchains.
+Mythril 2.0 is a symbolic-execution-based security analysis tool for EVM bytecode. It detects security vulnerabilities in smart contracts built for Ethereum and other EVM-compatible blockchains.
 
 Whether you want to contribute, need support, or want to learn what we have cooking for the future, you can checkout diligence-mythx channel in [ConsenSys Discord server](https://discord.gg/consensys).
 
@@ -21,13 +21,13 @@ Whether you want to contribute, need support, or want to learn what we have cook
 Get it with [Docker](https://www.docker.com):
 
 ```bash
-$ docker pull mythril/myth
+$ docker pull mythril2/myth2
 ```
 
 Install from Pypi (Python 3.7-3.10):
 
 ```bash
-$ pip3 install mythril
+$ pip3 install mythril2
 ```
 
 Use it via pre-commit hook (replace `$GIT_TAG` with real tag):
@@ -36,7 +36,7 @@ Use it via pre-commit hook (replace `$GIT_TAG` with real tag):
 - repo: https://github.com/Consensys/mythril
   rev: $GIT_TAG
   hooks:
-    - id: mythril
+    - id: mythril2
 ```
 
 Additionally, set `args: [disassemble]` or `args: [read-storage]` to use a different command than `analyze`.
@@ -48,13 +48,13 @@ See the [docs](https://mythril-classic.readthedocs.io/en/master/installation.htm
 Run:
 
 ```
-$ myth analyze <solidity-file>
+$ myth2 analyze <solidity-file>
 ```
 
 Or:
 
 ```
-$ myth analyze -a <contract-address>
+$ myth2 analyze -a <contract-address>
 ```
 
 Specify the maximum number of transactions to explore with `-t <number>`. You can also set a timeout with `--execution-timeout <seconds>`.
@@ -62,7 +62,7 @@ Specify the maximum number of transactions to explore with `-t <number>`. You ca
 Here is an example of running Mythril on the file `killbilly.sol` which is in the `solidity_examples` directory for `3` transactions:
 
 ```
-> myth a killbilly.sol -t 3
+> myth2 a killbilly.sol -t 3
 ==== Unprotected Selfdestruct ====
 SWC ID: 106
 Severity: High
@@ -93,12 +93,12 @@ Caller: [ATTACKER], function: commencekilling(), txdata: 0x7c11da20, value: 0x0
 ```
 
 
-Instructions for using Mythril are found on the [docs](https://mythril-classic.readthedocs.io/en/develop/). 
+Instructions for using Mythril 2.0 are found on the [docs](https://mythril-classic.readthedocs.io/en/develop/). 
 
 For support or general discussions please checkout [diligence-mythx channel](https://discord.com/channels/697535391594446898/712829485350649886) in [ConsenSys Discord server](https://discord.gg/consensys)..
 
 ## Building the Documentation
-Mythril's documentation is contained in the `docs` folder and is published to [Read the Docs](https://mythril-classic.readthedocs.io/en/develop/). It is based on Sphinx and can be built using the Makefile contained in the subdirectory:
+Mythril 2.0's documentation is contained in the `docs` folder and is published to [Read the Docs](https://mythril-classic.readthedocs.io/en/develop/). It is based on Sphinx and can be built using the Makefile contained in the subdirectory:
 
 ```
 cd docs
