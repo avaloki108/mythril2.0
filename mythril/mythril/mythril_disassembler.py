@@ -12,19 +12,19 @@ import solc
 from eth_utils import int_to_big_endian
 from semantic_version import NpmSpec, Version
 
-from mythril.ethereum import util
-from mythril.ethereum.evmcontract import EVMContract
-from mythril.ethereum.interface.rpc.client import EthJsonRpc
+from mythril2.ethereum import util
+from mythril2.ethereum.evmcontract import EVMContract
+from mythril2.ethereum.interface.rpc.client import EthJsonRpc
 from mythril2.ethereum.interface.rpc.exceptions import RpcConnectionError
-from mythril.exceptions import CompilerError, CriticalError, NoContractFoundError
-from mythril.solidity.soliditycontract import (
+from mythril2.exceptions import CompilerError, CriticalError, NoContractFoundError
+from mythril2.solidity.soliditycontract import (
     SolidityContract,
     get_contracts_from_file,
     get_contracts_from_foundry,
 )
-from mythril.support import signatures
-from mythril.support.support_args import args
-from mythril.support.support_utils import rzpad, sha3, zpad
+from mythril2.support import signatures
+from mythril2.support.support_args import args
+from mythril2.support.support_utils import rzpad, sha3, zpad
 
 
 def format_warning(message, category, filename, lineno, line=""):
