@@ -7,7 +7,7 @@ class EthJsonRpcError(Exception):
     pass
 
 
-class ConnectionError(EthJsonRpcError):
+class RpcConnectionError(EthJsonRpcError):
     """An RPC exception denoting there was an error in connecting to the RPC
     instance."""
 
