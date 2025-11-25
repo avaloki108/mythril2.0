@@ -15,7 +15,7 @@ from semantic_version import NpmSpec, Version
 from mythril.ethereum import util
 from mythril.ethereum.evmcontract import EVMContract
 from mythril.ethereum.interface.rpc.client import EthJsonRpc
-from mythril.ethereum.interface.rpc.exceptions import ConnectionError
+from mythril2.ethereum.interface.rpc.exceptions import RpcConnectionError
 from mythril.exceptions import CompilerError, CriticalError, NoContractFoundError
 from mythril.solidity.soliditycontract import (
     SolidityContract,
