@@ -41,7 +41,18 @@ Use it via pre-commit hook (replace `$GIT_TAG` with real tag):
 
 Additionally, set `args: [disassemble]` or `args: [read-storage]` to use a different command than `analyze`.
 
-See the [docs](https://mythril-classic.readthedocs.io/en/master/installation.html) for more detailed instructions. 
+See the [docs](https://mythril-classic.readthedocs.io/en/master/installation.html) for more detailed instructions.
+
+## MCP Server (NEW!)
+
+Mythril now includes an MCP (Model Context Protocol) server that allows AI assistants and other MCP-compatible clients to use Mythril's security analysis capabilities! 🎉
+
+```bash
+# Start the MCP server
+$ mythril-mcp-server
+```
+
+For setup instructions and client configuration examples, see [README-MCP.md](README-MCP.md).
 
 ## Usage
 
