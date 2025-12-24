@@ -1,7 +1,7 @@
 # Mythril 2.0
 
 <p align="center">
-	<img src="/static/mythril_new.png" height="320px"/>
+	<img src="/static/Modern%20Mythril2%20logo%20design.png" height="320px"/>
 </p>
 
 [![Discord](https://img.shields.io/discord/697535391594446898)](https://discord.com/invite/consensys)
