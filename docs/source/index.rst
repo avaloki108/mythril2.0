@@ -1,5 +1,5 @@
-Welcome to Mythril's documentation!
-===========================================
+Welcome to Mythril 2.0 documentation!
+=====================================
 
 .. toctree::
    :maxdepth: 1
@@ -10,7 +10,7 @@ Welcome to Mythril's documentation!
    tutorial
    security-analysis
    analysis-modules
-   mythril
+   mythril2
 
 
 Indices and Tables
@@ -19,4 +19,3 @@ Indices and Tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
-

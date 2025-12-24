@@ -1,77 +1,77 @@
-mythril.support package
+mythril2.support package
 =======================
 
 Submodules
 ----------
 
-mythril.support.loader module
+mythril2.support.loader module
 -----------------------------
 
-.. automodule:: mythril.support.loader
+.. automodule:: mythril2.support.loader
    :members:
    :undoc-members:
    :show-inheritance:
 
-mythril.support.lock module
+mythril2.support.lock module
 ---------------------------
 
-.. automodule:: mythril.support.lock
+.. automodule:: mythril2.support.lock
    :members:
    :undoc-members:
    :show-inheritance:
 
-mythril.support.model module
+mythril2.support.model module
 ----------------------------
 
-.. automodule:: mythril.support.model
+.. automodule:: mythril2.support.model
    :members:
    :undoc-members:
    :show-inheritance:
 
-mythril.support.opcodes module
+mythril2.support.opcodes module
 ------------------------------
 
-.. automodule:: mythril.support.opcodes
+.. automodule:: mythril2.support.opcodes
    :members:
    :undoc-members:
    :show-inheritance:
 
-mythril.support.signatures module
+mythril2.support.signatures module
 ---------------------------------
 
-.. automodule:: mythril.support.signatures
+.. automodule:: mythril2.support.signatures
    :members:
    :undoc-members:
    :show-inheritance:
 
-mythril.support.source\_support module
+mythril2.support.source\_support module
 --------------------------------------
 
-.. automodule:: mythril.support.source_support
+.. automodule:: mythril2.support.source_support
    :members:
    :undoc-members:
    :show-inheritance:
 
-mythril.support.start\_time module
+mythril2.support.start\_time module
 ----------------------------------
 
-.. automodule:: mythril.support.start_time
+.. automodule:: mythril2.support.start_time
    :members:
    :undoc-members:
    :show-inheritance:
 
-mythril.support.support\_args module
+mythril2.support.support\_args module
 ------------------------------------
 
-.. automodule:: mythril.support.support_args
+.. automodule:: mythril2.support.support_args
    :members:
    :undoc-members:
    :show-inheritance:
 
-mythril.support.support\_utils module
+mythril2.support.support\_utils module
 -------------------------------------
 
-.. automodule:: mythril.support.support_utils
+.. automodule:: mythril2.support.support_utils
    :members:
    :undoc-members:
    :show-inheritance:
@@ -79,7 +79,7 @@ mythril.support.support\_utils module
 Module contents
 ---------------
 
-.. automodule:: mythril.support
+.. automodule:: mythril2.support
    :members:
    :undoc-members:
    :show-inheritance:

@@ -1,4 +1,4 @@
-mythril.ethereum.interface package
+mythril2.ethereum.interface package
 ==================================
 
 Subpackages
@@ -7,12 +7,12 @@ Subpackages
 .. toctree::
    :maxdepth: 4
 
-   mythril.ethereum.interface.rpc
+   mythril2.ethereum.interface.rpc
 
 Module contents
 ---------------
 
-.. automodule:: mythril.ethereum.interface
+.. automodule:: mythril2.ethereum.interface
    :members:
    :undoc-members:
    :show-inheritance:

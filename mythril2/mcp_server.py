@@ -28,7 +28,7 @@ from mythril2.core import Mythril2Analyzer, Mythril2Config, Mythril2Disassembler
 log = logging.getLogger(__name__)
 
 # Initialize MCP server
-app = Server("mythril-mcp-server")
+app = Server("mythril2-mcp-server")
 
 
 def create_default_args() -> Namespace:

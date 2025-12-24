@@ -8,9 +8,9 @@ from dataclasses import dataclass
 import re
 from collections import Counter
 
-from mythril.laser.ethereum.state.global_state import GlobalState
-from mythril.laser.ethereum.state.machine_state import MachineState
-from mythril.disassembler.disassembly import Disassembly
+from mythril2.laser.ethereum.state.global_state import GlobalState
+from mythril2.laser.ethereum.state.machine_state import MachineState
+from mythril2.disassembler.disassembly import Disassembly
 
 
 @dataclass

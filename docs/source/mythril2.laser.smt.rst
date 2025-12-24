@@ -1,4 +1,4 @@
-mythril.laser.smt package
+mythril2.laser.smt package
 =========================
 
 Subpackages
@@ -7,63 +7,63 @@ Subpackages
 .. toctree::
    :maxdepth: 4
 
-   mythril.laser.smt.solver
+   mythril2.laser.smt.solver
 
 Submodules
 ----------
 
-mythril.laser.smt.array module
+mythril2.laser.smt.array module
 ------------------------------
 
-.. automodule:: mythril.laser.smt.array
+.. automodule:: mythril2.laser.smt.array
    :members:
    :undoc-members:
    :show-inheritance:
 
-mythril.laser.smt.bitvec module
+mythril2.laser.smt.bitvec module
 -------------------------------
 
-.. automodule:: mythril.laser.smt.bitvec
+.. automodule:: mythril2.laser.smt.bitvec
    :members:
    :undoc-members:
    :show-inheritance:
 
-mythril.laser.smt.bitvec\_helper module
+mythril2.laser.smt.bitvec\_helper module
 ---------------------------------------
 
-.. automodule:: mythril.laser.smt.bitvec_helper
+.. automodule:: mythril2.laser.smt.bitvec_helper
    :members:
    :undoc-members:
    :show-inheritance:
 
-mythril.laser.smt.bool module
+mythril2.laser.smt.bool module
 -----------------------------
 
-.. automodule:: mythril.laser.smt.bool
+.. automodule:: mythril2.laser.smt.bool
    :members:
    :undoc-members:
    :show-inheritance:
 
-mythril.laser.smt.expression module
+mythril2.laser.smt.expression module
 -----------------------------------
 
-.. automodule:: mythril.laser.smt.expression
+.. automodule:: mythril2.laser.smt.expression
    :members:
    :undoc-members:
    :show-inheritance:
 
-mythril.laser.smt.function module
+mythril2.laser.smt.function module
 ---------------------------------
 
-.. automodule:: mythril.laser.smt.function
+.. automodule:: mythril2.laser.smt.function
    :members:
    :undoc-members:
    :show-inheritance:
 
-mythril.laser.smt.model module
+mythril2.laser.smt.model module
 ------------------------------
 
-.. automodule:: mythril.laser.smt.model
+.. automodule:: mythril2.laser.smt.model
    :members:
    :undoc-members:
    :show-inheritance:
@@ -71,7 +71,7 @@ mythril.laser.smt.model module
 Module contents
 ---------------
 
-.. automodule:: mythril.laser.smt
+.. automodule:: mythril2.laser.smt
    :members:
    :undoc-members:
    :show-inheritance:

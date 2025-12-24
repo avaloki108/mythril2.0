@@ -2,12 +2,12 @@
 REM Cross-platform coverage runner for Windows
 REM Equivalent to run_coverage.py for Windows environments
 
-echo Running Mythril coverage analysis on Windows...
+echo Running Mythril2 coverage analysis on Windows...
 echo.
 
 REM Set environment variables
-if not defined MYTHRIL_DIR (
-    set MYTHRIL_DIR=%CD%
+if not defined MYTHRIL2_DIR (
+    set MYTHRIL2_DIR=%CD%
 )
 
 if not defined INFURA_ID (

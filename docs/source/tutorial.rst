@@ -489,7 +489,7 @@ We encounter the following error:
 
     .. code-block:: none
 
-        mythril.interfaces.cli [ERROR]: Solc experienced a fatal error.
+        mythril2.interfaces.cli [ERROR]: Solc experienced a fatal error.
 
         ParserError: Source "@openzeppelin/contracts/token/PRC20/PRC20.sol" not found: File not found. Searched the following locations: "".
         --> <file_path>:1:1:

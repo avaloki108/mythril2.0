@@ -1,21 +1,21 @@
-mythril.laser.plugin.plugins.coverage package
+mythril2.laser.plugin.plugins.coverage package
 =============================================
 
 Submodules
 ----------
 
-mythril.laser.plugin.plugins.coverage.coverage\_plugin module
+mythril2.laser.plugin.plugins.coverage.coverage\_plugin module
 -------------------------------------------------------------
 
-.. automodule:: mythril.laser.plugin.plugins.coverage.coverage_plugin
+.. automodule:: mythril2.laser.plugin.plugins.coverage.coverage_plugin
    :members:
    :undoc-members:
    :show-inheritance:
 
-mythril.laser.plugin.plugins.coverage.coverage\_strategy module
+mythril2.laser.plugin.plugins.coverage.coverage\_strategy module
 ---------------------------------------------------------------
 
-.. automodule:: mythril.laser.plugin.plugins.coverage.coverage_strategy
+.. automodule:: mythril2.laser.plugin.plugins.coverage.coverage_strategy
    :members:
    :undoc-members:
    :show-inheritance:
@@ -23,7 +23,7 @@ mythril.laser.plugin.plugins.coverage.coverage\_strategy module
 Module contents
 ---------------
 
-.. automodule:: mythril.laser.plugin.plugins.coverage
+.. automodule:: mythril2.laser.plugin.plugins.coverage
    :members:
    :undoc-members:
    :show-inheritance:

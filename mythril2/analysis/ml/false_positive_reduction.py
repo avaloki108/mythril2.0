@@ -16,7 +16,7 @@ from sklearn.model_selection import cross_val_score, train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.calibration import CalibratedClassifierCV
 
-from mythril.analysis.issue_annotation import IssueAnnotation
+from mythril2.analysis.issue_annotation import IssueAnnotation
 from .feature_extraction import FeatureExtractor, CodeFeatures
 
 

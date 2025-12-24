@@ -1,21 +1,21 @@
-mythril.disassembler package
+mythril2.disassembler package
 ============================
 
 Submodules
 ----------
 
-mythril.disassembler.asm module
+mythril2.disassembler.asm module
 -------------------------------
 
-.. automodule:: mythril.disassembler.asm
+.. automodule:: mythril2.disassembler.asm
    :members:
    :undoc-members:
    :show-inheritance:
 
-mythril.disassembler.disassembly module
+mythril2.disassembler.disassembly module
 ---------------------------------------
 
-.. automodule:: mythril.disassembler.disassembly
+.. automodule:: mythril2.disassembler.disassembly
    :members:
    :undoc-members:
    :show-inheritance:
@@ -23,7 +23,7 @@ mythril.disassembler.disassembly module
 Module contents
 ---------------
 
-.. automodule:: mythril.disassembler
+.. automodule:: mythril2.disassembler
    :members:
    :undoc-members:
    :show-inheritance:

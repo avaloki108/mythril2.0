@@ -1,29 +1,29 @@
-mythril.laser.smt.solver package
+mythril2.laser.smt.solver package
 ================================
 
 Submodules
 ----------
 
-mythril.laser.smt.solver.independence\_solver module
+mythril2.laser.smt.solver.independence\_solver module
 ----------------------------------------------------
 
-.. automodule:: mythril.laser.smt.solver.independence_solver
+.. automodule:: mythril2.laser.smt.solver.independence_solver
    :members:
    :undoc-members:
    :show-inheritance:
 
-mythril.laser.smt.solver.solver module
+mythril2.laser.smt.solver.solver module
 --------------------------------------
 
-.. automodule:: mythril.laser.smt.solver.solver
+.. automodule:: mythril2.laser.smt.solver.solver
    :members:
    :undoc-members:
    :show-inheritance:
 
-mythril.laser.smt.solver.solver\_statistics module
+mythril2.laser.smt.solver.solver\_statistics module
 --------------------------------------------------
 
-.. automodule:: mythril.laser.smt.solver.solver_statistics
+.. automodule:: mythril2.laser.smt.solver.solver_statistics
    :members:
    :undoc-members:
    :show-inheritance:
@@ -31,7 +31,7 @@ mythril.laser.smt.solver.solver\_statistics module
 Module contents
 ---------------
 
-.. automodule:: mythril.laser.smt.solver
+.. automodule:: mythril2.laser.smt.solver
    :members:
    :undoc-members:
    :show-inheritance:

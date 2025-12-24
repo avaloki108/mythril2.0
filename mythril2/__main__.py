@@ -3,4 +3,4 @@
 import mythril2.interfaces.cli
 
 if __name__ == "__main__":
-    mythril.interfaces.cli.main()
+    mythril2.interfaces.cli.main()

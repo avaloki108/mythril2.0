@@ -2,12 +2,12 @@
 REM Cross-platform test runner for Windows
 REM Equivalent to run_tests.py for Windows environments
 
-echo Running Mythril tests on Windows...
+echo Running Mythril2 tests on Windows...
 echo.
 
 REM Set environment variables
-if not defined MYTHRIL_DIR (
-    set MYTHRIL_DIR=%CD%
+if not defined MYTHRIL2_DIR (
+    set MYTHRIL2_DIR=%CD%
 )
 
 if not defined INFURA_ID (
@@ -26,7 +26,7 @@ pip install pytest pytest-mock pytest-cov coverage
 
 echo.
 echo Running unit tests...
-python -m pytest tests/ -v --tb=short --cov=mythril --cov-report=term-missing --cov-report=html:htmlcov --cov-report=xml
+python -m pytest tests/ -v --tb=short --cov=mythril2 --cov-report=term-missing --cov-report=html:htmlcov --cov-report=xml
 
 if %ERRORLEVEL% neq 0 (
     echo.

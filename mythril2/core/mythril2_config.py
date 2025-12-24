@@ -16,7 +16,7 @@ log = logging.getLogger(__name__)
 class Mythril2Config:
     """
     The Mythril Analyzer class
-    Responsible for setup of the mythril environment
+    Responsible for setup of the mythril2 environment
     """
 
     def __init__(self):
@@ -32,8 +32,8 @@ class Mythril2Config:
     @staticmethod
     def init_mythril_dir() -> str:
         """
-        Initializes the mythril dir and config.ini file
-        :return: The mythril dir's path
+        Initializes the mythril2 dir and config.ini file
+        :return: The mythril2 dir's path
         """
 
         try:
@@ -43,12 +43,12 @@ class Mythril2Config:
 
         if not os.path.exists(mythril_dir):
             # Initialize data directory
-            log.info("Creating mythril data directory")
+            log.info("Creating mythril2 data directory")
             os.mkdir(mythril_dir)
 
         db_path = str(Path(mythril_dir) / "signatures.db")
         if not os.path.exists(db_path):
-            # if the default mythril dir doesn't contain a signature DB
+            # if the default mythril2 dir doesn't contain a signature DB
             # initialize it with the default one from the project root
             asset_dir = Path(__file__).parent.parent / "support" / "assets"
             copyfile(str(asset_dir / "signatures.db"), db_path)
@@ -98,7 +98,7 @@ class Mythril2Config:
     @staticmethod
     def _add_dynamic_loading_option(config: ConfigParser) -> None:
         """
-        Sets the dynamic loading config option in .mythril/config.ini file
+        Sets the dynamic loading config option in .mythril2/config.ini file
         :param config: The config file object
         :return: None
         """
@@ -154,7 +154,7 @@ class Mythril2Config:
                         "Infura key not provided, so onchain access is disabled. "
                         "Use --infura-id <INFURA_ID> "
                         "or set it in the environment variable INFURA_ID "
-                        "or in the ~/.mythril/config.ini file"
+                        "or in the ~/.mythril2/config.ini file"
                     )
                     self.eth = None
                     return

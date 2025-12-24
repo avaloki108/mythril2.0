@@ -264,7 +264,7 @@ class Report:
     """A report containing the content of multiple issues."""
 
     environment = Environment(
-        loader=PackageLoader("mythril.analysis"), trim_blocks=True
+        loader=PackageLoader("mythril2.analysis"), trim_blocks=True
     )
 
     def __init__(

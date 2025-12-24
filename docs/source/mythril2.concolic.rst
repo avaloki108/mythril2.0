@@ -1,29 +1,29 @@
-mythril.concolic package
+mythril2.concolic package
 ========================
 
 Submodules
 ----------
 
-mythril.concolic.concolic\_execution module
+mythril2.concolic.concolic\_execution module
 -------------------------------------------
 
-.. automodule:: mythril.concolic.concolic_execution
+.. automodule:: mythril2.concolic.concolic_execution
    :members:
    :undoc-members:
    :show-inheritance:
 
-mythril.concolic.concrete\_data module
+mythril2.concolic.concrete\_data module
 --------------------------------------
 
-.. automodule:: mythril.concolic.concrete_data
+.. automodule:: mythril2.concolic.concrete_data
    :members:
    :undoc-members:
    :show-inheritance:
 
-mythril.concolic.find\_trace module
+mythril2.concolic.find\_trace module
 -----------------------------------
 
-.. automodule:: mythril.concolic.find_trace
+.. automodule:: mythril2.concolic.find_trace
    :members:
    :undoc-members:
    :show-inheritance:
@@ -31,7 +31,7 @@ mythril.concolic.find\_trace module
 Module contents
 ---------------
 
-.. automodule:: mythril.concolic
+.. automodule:: mythril2.concolic
    :members:
    :undoc-members:
    :show-inheritance:

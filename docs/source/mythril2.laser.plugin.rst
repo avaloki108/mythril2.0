@@ -1,4 +1,4 @@
-mythril.laser.plugin package
+mythril2.laser.plugin package
 ============================
 
 Subpackages
@@ -7,39 +7,39 @@ Subpackages
 .. toctree::
    :maxdepth: 4
 
-   mythril.laser.plugin.plugins
+   mythril2.laser.plugin.plugins
 
 Submodules
 ----------
 
-mythril.laser.plugin.builder module
+mythril2.laser.plugin.builder module
 -----------------------------------
 
-.. automodule:: mythril.laser.plugin.builder
+.. automodule:: mythril2.laser.plugin.builder
    :members:
    :undoc-members:
    :show-inheritance:
 
-mythril.laser.plugin.interface module
+mythril2.laser.plugin.interface module
 -------------------------------------
 
-.. automodule:: mythril.laser.plugin.interface
+.. automodule:: mythril2.laser.plugin.interface
    :members:
    :undoc-members:
    :show-inheritance:
 
-mythril.laser.plugin.loader module
+mythril2.laser.plugin.loader module
 ----------------------------------
 
-.. automodule:: mythril.laser.plugin.loader
+.. automodule:: mythril2.laser.plugin.loader
    :members:
    :undoc-members:
    :show-inheritance:
 
-mythril.laser.plugin.signals module
+mythril2.laser.plugin.signals module
 -----------------------------------
 
-.. automodule:: mythril.laser.plugin.signals
+.. automodule:: mythril2.laser.plugin.signals
    :members:
    :undoc-members:
    :show-inheritance:
@@ -47,7 +47,7 @@ mythril.laser.plugin.signals module
 Module contents
 ---------------
 
-.. automodule:: mythril.laser.plugin
+.. automodule:: mythril2.laser.plugin
    :members:
    :undoc-members:
    :show-inheritance:

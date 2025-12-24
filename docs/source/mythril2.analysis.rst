@@ -1,4 +1,4 @@
-mythril.analysis package
+mythril2.analysis package
 ========================
 
 Subpackages
@@ -7,103 +7,103 @@ Subpackages
 .. toctree::
    :maxdepth: 4
 
-   mythril.analysis.module
+   mythril2.analysis.module
 
 Submodules
 ----------
 
-mythril.analysis.analysis\_args module
+mythril2.analysis.analysis\_args module
 --------------------------------------
 
-.. automodule:: mythril.analysis.analysis_args
+.. automodule:: mythril2.analysis.analysis_args
    :members:
    :undoc-members:
    :show-inheritance:
 
-mythril.analysis.call\_helpers module
+mythril2.analysis.call\_helpers module
 -------------------------------------
 
-.. automodule:: mythril.analysis.call_helpers
+.. automodule:: mythril2.analysis.call_helpers
    :members:
    :undoc-members:
    :show-inheritance:
 
-mythril.analysis.callgraph module
+mythril2.analysis.callgraph module
 ---------------------------------
 
-.. automodule:: mythril.analysis.callgraph
+.. automodule:: mythril2.analysis.callgraph
    :members:
    :undoc-members:
    :show-inheritance:
 
-mythril.analysis.issue\_annotation module
+mythril2.analysis.issue\_annotation module
 -----------------------------------------
 
-.. automodule:: mythril.analysis.issue_annotation
+.. automodule:: mythril2.analysis.issue_annotation
    :members:
    :undoc-members:
    :show-inheritance:
 
-mythril.analysis.ops module
+mythril2.analysis.ops module
 ---------------------------
 
-.. automodule:: mythril.analysis.ops
+.. automodule:: mythril2.analysis.ops
    :members:
    :undoc-members:
    :show-inheritance:
 
-mythril.analysis.potential\_issues module
+mythril2.analysis.potential\_issues module
 -----------------------------------------
 
-.. automodule:: mythril.analysis.potential_issues
+.. automodule:: mythril2.analysis.potential_issues
    :members:
    :undoc-members:
    :show-inheritance:
 
-mythril.analysis.report module
+mythril2.analysis.report module
 ------------------------------
 
-.. automodule:: mythril.analysis.report
+.. automodule:: mythril2.analysis.report
    :members:
    :undoc-members:
    :show-inheritance:
 
-mythril.analysis.security module
+mythril2.analysis.security module
 --------------------------------
 
-.. automodule:: mythril.analysis.security
+.. automodule:: mythril2.analysis.security
    :members:
    :undoc-members:
    :show-inheritance:
 
-mythril.analysis.solver module
+mythril2.analysis.solver module
 ------------------------------
 
-.. automodule:: mythril.analysis.solver
+.. automodule:: mythril2.analysis.solver
    :members:
    :undoc-members:
    :show-inheritance:
 
-mythril.analysis.swc\_data module
+mythril2.analysis.swc\_data module
 ---------------------------------
 
-.. automodule:: mythril.analysis.swc_data
+.. automodule:: mythril2.analysis.swc_data
    :members:
    :undoc-members:
    :show-inheritance:
 
-mythril.analysis.symbolic module
+mythril2.analysis.symbolic module
 --------------------------------
 
-.. automodule:: mythril.analysis.symbolic
+.. automodule:: mythril2.analysis.symbolic
    :members:
    :undoc-members:
    :show-inheritance:
 
-mythril.analysis.traceexplore module
+mythril2.analysis.traceexplore module
 ------------------------------------
 
-.. automodule:: mythril.analysis.traceexplore
+.. automodule:: mythril2.analysis.traceexplore
    :members:
    :undoc-members:
    :show-inheritance:
@@ -111,7 +111,7 @@ mythril.analysis.traceexplore module
 Module contents
 ---------------
 
-.. automodule:: mythril.analysis
+.. automodule:: mythril2.analysis
    :members:
    :undoc-members:
    :show-inheritance:

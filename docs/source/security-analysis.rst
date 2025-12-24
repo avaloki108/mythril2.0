@@ -1,7 +1,7 @@
 Security Analysis
 =================
 
-Running :code:`myth2 analyze` with one of the input options described below will run the analysis modules in the `/analysis/modules <https://github.com/ConsenSys/mythril/tree/master/mythril/analysis/modules>`_ directory.
+Running :code:`myth2 analyze` with one of the input options described below will run the analysis modules in the `/analysis/module/modules <https://github.com/avaloki108/mythril2.0/tree/master/mythril2/analysis/module/modules>`_ directory.
 
 ***********************
 Analyzing Solidity Code
@@ -28,7 +28,7 @@ In order to work with Solidity source code files, the `solc command line compile
 
    --------------------
 
-If an input file contains multiple contract definitions, Mythril analyzes the *last* bytecode output produced by solc. You can override this by specifying the contract name explicitly:
+If an input file contains multiple contract definitions, Mythril 2.0 analyzes the *last* bytecode output produced by solc. You can override this by specifying the contract name explicitly:
 
 .. code-block:: bash
 
@@ -55,7 +55,7 @@ Available formats are :code:`text`, :code:`markdown`, :code:`json`, and :code:`j
 Analyzing On-Chain Contracts
 ****************************
 
-When analyzing contracts on the blockchain, Mythril will by default attempt to query INFURA. You can use the built-in INFURA support or manually configure the RPC settings with the :code:`--rpc` argument.
+When analyzing contracts on the blockchain, Mythril 2.0 will by default attempt to query INFURA. You can use the built-in INFURA support or manually configure the RPC settings with the :code:`--rpc` argument.
 
 +-------------------------------------------------+-------------------------------------------------+
 | :code:`--rpc ganache`                           | Connect to local Ganache                        |
@@ -75,7 +75,7 @@ Analyze mainnet contract via INFURA:
 
    myth2 analyze -a 0x5c436ff914c458983414019195e0f4ecbef9e6dd --infura-id <ID>
 
-You can also use the environment variable `INFURA_ID` instead of the cmd line argument or set it in ~/.mythril/config.ini.
+You can also use the environment variable `INFURA_ID` instead of the cmd line argument or set it in ~/.mythril2/config.ini.
 
 .. code-block:: bash
 
@@ -85,7 +85,7 @@ You can also use the environment variable `INFURA_ID` instead of the cmd line ar
 Speed vs. Coverage
 ******************
 
-The execution timeout can be specified with the :code:`--execution-timeout <seconds>` argument. When the timeout is reached, mythril will stop analysis and print out all currently found issues.
+The execution timeout can be specified with the :code:`--execution-timeout <seconds>` argument. When the timeout is reached, Mythril 2.0 will stop analysis and print out all currently found issues.
 
 The maximum recursion depth for the symbolic execution engine can be controlled with the :code:`--max-depth` argument. The default value is 22. Lowering this value will decrease the number of explored states and analysis time, while increasing this number will increase the number of explored states and increase analysis time. For some contracts, it helps to fine tune this number to get the best analysis results.
 -

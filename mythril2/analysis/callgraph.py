@@ -230,7 +230,7 @@ def generate_graph(
     :return:
     """
     env = Environment(
-        loader=PackageLoader("mythril.analysis"),
+        loader=PackageLoader("mythril2.analysis"),
         autoescape=select_autoescape(["html", "xml"]),
     )
     template = env.get_template("callgraph.html")

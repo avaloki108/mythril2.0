@@ -1,29 +1,29 @@
-mythril.plugin package
+mythril2.plugin package
 ======================
 
 Submodules
 ----------
 
-mythril.plugin.discovery module
+mythril2.plugin.discovery module
 -------------------------------
 
-.. automodule:: mythril.plugin.discovery
+.. automodule:: mythril2.plugin.discovery
    :members:
    :undoc-members:
    :show-inheritance:
 
-mythril.plugin.interface module
+mythril2.plugin.interface module
 -------------------------------
 
-.. automodule:: mythril.plugin.interface
+.. automodule:: mythril2.plugin.interface
    :members:
    :undoc-members:
    :show-inheritance:
 
-mythril.plugin.loader module
+mythril2.plugin.loader module
 ----------------------------
 
-.. automodule:: mythril.plugin.loader
+.. automodule:: mythril2.plugin.loader
    :members:
    :undoc-members:
    :show-inheritance:
@@ -31,7 +31,7 @@ mythril.plugin.loader module
 Module contents
 ---------------
 
-.. automodule:: mythril.plugin
+.. automodule:: mythril2.plugin
    :members:
    :undoc-members:
    :show-inheritance:

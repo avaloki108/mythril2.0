@@ -1,21 +1,21 @@
-mythril.interfaces package
+mythril2.interfaces package
 ==========================
 
 Submodules
 ----------
 
-mythril.interfaces.cli module
+mythril2.interfaces.cli module
 -----------------------------
 
-.. automodule:: mythril.interfaces.cli
+.. automodule:: mythril2.interfaces.cli
    :members:
    :undoc-members:
    :show-inheritance:
 
-mythril.interfaces.epic module
+mythril2.interfaces.epic module
 ------------------------------
 
-.. automodule:: mythril.interfaces.epic
+.. automodule:: mythril2.interfaces.epic
    :members:
    :undoc-members:
    :show-inheritance:
@@ -23,7 +23,7 @@ mythril.interfaces.epic module
 Module contents
 ---------------
 
-.. automodule:: mythril.interfaces
+.. automodule:: mythril2.interfaces
    :members:
    :undoc-members:
    :show-inheritance:

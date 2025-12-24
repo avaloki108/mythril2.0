@@ -1,13 +1,13 @@
-mythril.solidity package
+mythril2.solidity package
 ========================
 
 Submodules
 ----------
 
-mythril.solidity.soliditycontract module
+mythril2.solidity.soliditycontract module
 ----------------------------------------
 
-.. automodule:: mythril.solidity.soliditycontract
+.. automodule:: mythril2.solidity.soliditycontract
    :members:
    :undoc-members:
    :show-inheritance:
@@ -15,7 +15,7 @@ mythril.solidity.soliditycontract module
 Module contents
 ---------------
 
-.. automodule:: mythril.solidity
+.. automodule:: mythril2.solidity
    :members:
    :undoc-members:
    :show-inheritance:

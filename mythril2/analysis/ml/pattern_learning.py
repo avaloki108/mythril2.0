@@ -14,8 +14,8 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.metrics.pairwise import cosine_similarity
 import joblib
 
-from mythril.analysis.issue_annotation import IssueAnnotation
-from mythril.laser.ethereum.state.global_state import GlobalState
+from mythril2.analysis.issue_annotation import IssueAnnotation
+from mythril2.laser.ethereum.state.global_state import GlobalState
 from .feature_extraction import FeatureExtractor, CodeFeatures
 
 

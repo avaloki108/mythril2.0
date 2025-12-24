@@ -1,4 +1,4 @@
-mythril.ethereum package
+mythril2.ethereum package
 ========================
 
 Subpackages
@@ -7,23 +7,23 @@ Subpackages
 .. toctree::
    :maxdepth: 4
 
-   mythril.ethereum.interface
+   mythril2.ethereum.interface
 
 Submodules
 ----------
 
-mythril.ethereum.evmcontract module
+mythril2.ethereum.evmcontract module
 -----------------------------------
 
-.. automodule:: mythril.ethereum.evmcontract
+.. automodule:: mythril2.ethereum.evmcontract
    :members:
    :undoc-members:
    :show-inheritance:
 
-mythril.ethereum.util module
+mythril2.ethereum.util module
 ----------------------------
 
-.. automodule:: mythril.ethereum.util
+.. automodule:: mythril2.ethereum.util
    :members:
    :undoc-members:
    :show-inheritance:
@@ -31,7 +31,7 @@ mythril.ethereum.util module
 Module contents
 ---------------
 
-.. automodule:: mythril.ethereum
+.. automodule:: mythril2.ethereum
    :members:
    :undoc-members:
    :show-inheritance:

@@ -1,4 +1,4 @@
-mythril.laser package
+mythril2.laser package
 =====================
 
 Subpackages
@@ -7,17 +7,17 @@ Subpackages
 .. toctree::
    :maxdepth: 4
 
-   mythril.laser.ethereum
-   mythril.laser.plugin
-   mythril.laser.smt
+   mythril2.laser.ethereum
+   mythril2.laser.plugin
+   mythril2.laser.smt
 
 Submodules
 ----------
 
-mythril.laser.execution\_info module
+mythril2.laser.execution\_info module
 ------------------------------------
 
-.. automodule:: mythril.laser.execution_info
+.. automodule:: mythril2.laser.execution_info
    :members:
    :undoc-members:
    :show-inheritance:
@@ -25,7 +25,7 @@ mythril.laser.execution\_info module
 Module contents
 ---------------
 
-.. automodule:: mythril.laser
+.. automodule:: mythril2.laser
    :members:
    :undoc-members:
    :show-inheritance:

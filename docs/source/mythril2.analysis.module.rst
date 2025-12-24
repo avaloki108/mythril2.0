@@ -1,4 +1,4 @@
-mythril.analysis.module package
+mythril2.analysis.module package
 ===============================
 
 Subpackages
@@ -7,39 +7,39 @@ Subpackages
 .. toctree::
    :maxdepth: 4
 
-   mythril.analysis.module.modules
+   mythril2.analysis.module.modules
 
 Submodules
 ----------
 
-mythril.analysis.module.base module
+mythril2.analysis.module.base module
 -----------------------------------
 
-.. automodule:: mythril.analysis.module.base
+.. automodule:: mythril2.analysis.module.base
    :members:
    :undoc-members:
    :show-inheritance:
 
-mythril.analysis.module.loader module
+mythril2.analysis.module.loader module
 -------------------------------------
 
-.. automodule:: mythril.analysis.module.loader
+.. automodule:: mythril2.analysis.module.loader
    :members:
    :undoc-members:
    :show-inheritance:
 
-mythril.analysis.module.module\_helpers module
+mythril2.analysis.module.module\_helpers module
 ----------------------------------------------
 
-.. automodule:: mythril.analysis.module.module_helpers
+.. automodule:: mythril2.analysis.module.module_helpers
    :members:
    :undoc-members:
    :show-inheritance:
 
-mythril.analysis.module.util module
+mythril2.analysis.module.util module
 -----------------------------------
 
-.. automodule:: mythril.analysis.module.util
+.. automodule:: mythril2.analysis.module.util
    :members:
    :undoc-members:
    :show-inheritance:
@@ -47,7 +47,7 @@ mythril.analysis.module.util module
 Module contents
 ---------------
 
-.. automodule:: mythril.analysis.module
+.. automodule:: mythril2.analysis.module
    :members:
    :undoc-members:
    :show-inheritance:

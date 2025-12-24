@@ -5,7 +5,7 @@ import logging
 from copy import copy, deepcopy
 from typing import Callable, List, Tuple, Union, cast
 
-import mythril.laser.ethereum.util as helper
+import mythril2.laser.ethereum.util as helper
 from mythril2.disassembler.disassembly import Disassembly
 from mythril2.exceptions import UnsatError
 from mythril2.laser.ethereum import util

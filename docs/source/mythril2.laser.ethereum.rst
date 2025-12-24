@@ -1,4 +1,4 @@
-mythril.laser.ethereum package
+mythril2.laser.ethereum package
 ==============================
 
 Subpackages
@@ -7,82 +7,82 @@ Subpackages
 .. toctree::
    :maxdepth: 4
 
-   mythril.laser.ethereum.function_managers
-   mythril.laser.ethereum.state
-   mythril.laser.ethereum.strategy
-   mythril.laser.ethereum.transaction
+   mythril2.laser.ethereum.function_managers
+   mythril2.laser.ethereum.state
+   mythril2.laser.ethereum.strategy
+   mythril2.laser.ethereum.transaction
 
 Submodules
 ----------
 
-mythril.laser.ethereum.call module
+mythril2.laser.ethereum.call module
 ----------------------------------
 
-.. automodule:: mythril.laser.ethereum.call
+.. automodule:: mythril2.laser.ethereum.call
    :members:
    :undoc-members:
    :show-inheritance:
 
-mythril.laser.ethereum.cfg module
+mythril2.laser.ethereum.cfg module
 ---------------------------------
 
-.. automodule:: mythril.laser.ethereum.cfg
+.. automodule:: mythril2.laser.ethereum.cfg
    :members:
    :undoc-members:
    :show-inheritance:
 
-mythril.laser.ethereum.evm\_exceptions module
+mythril2.laser.ethereum.evm\_exceptions module
 ---------------------------------------------
 
-.. automodule:: mythril.laser.ethereum.evm_exceptions
+.. automodule:: mythril2.laser.ethereum.evm_exceptions
    :members:
    :undoc-members:
    :show-inheritance:
 
-mythril.laser.ethereum.instruction\_data module
+mythril2.laser.ethereum.instruction\_data module
 -----------------------------------------------
 
-.. automodule:: mythril.laser.ethereum.instruction_data
+.. automodule:: mythril2.laser.ethereum.instruction_data
    :members:
    :undoc-members:
    :show-inheritance:
 
-mythril.laser.ethereum.instructions module
+mythril2.laser.ethereum.instructions module
 ------------------------------------------
 
-.. automodule:: mythril.laser.ethereum.instructions
+.. automodule:: mythril2.laser.ethereum.instructions
    :members:
    :undoc-members:
    :show-inheritance:
 
-mythril.laser.ethereum.natives module
+mythril2.laser.ethereum.natives module
 -------------------------------------
 
-.. automodule:: mythril.laser.ethereum.natives
+.. automodule:: mythril2.laser.ethereum.natives
    :members:
    :undoc-members:
    :show-inheritance:
 
-mythril.laser.ethereum.svm module
+mythril2.laser.ethereum.svm module
 ---------------------------------
 
-.. automodule:: mythril.laser.ethereum.svm
+.. automodule:: mythril2.laser.ethereum.svm
    :members:
    :undoc-members:
    :show-inheritance:
 
-mythril.laser.ethereum.time\_handler module
+mythril2.laser.ethereum.time\_handler module
 -------------------------------------------
 
-.. automodule:: mythril.laser.ethereum.time_handler
+.. automodule:: mythril2.laser.ethereum.time_handler
    :members:
    :undoc-members:
    :show-inheritance:
 
-mythril.laser.ethereum.util module
+mythril2.laser.ethereum.util module
 ----------------------------------
 
-.. automodule:: mythril.laser.ethereum.util
+.. automodule:: mythril2.laser.ethereum.util
    :members:
    :undoc-members:
    :show-inheritance:
@@ -90,7 +90,7 @@ mythril.laser.ethereum.util module
 Module contents
 ---------------
 
-.. automodule:: mythril.laser.ethereum
+.. automodule:: mythril2.laser.ethereum
    :members:
    :undoc-members:
    :show-inheritance:

@@ -1,45 +1,45 @@
-mythril.ethereum.interface.rpc package
+mythril2.ethereum.interface.rpc package
 ======================================
 
 Submodules
 ----------
 
-mythril.ethereum.interface.rpc.base\_client module
+mythril2.ethereum.interface.rpc.base\_client module
 --------------------------------------------------
 
-.. automodule:: mythril.ethereum.interface.rpc.base_client
+.. automodule:: mythril2.ethereum.interface.rpc.base_client
    :members:
    :undoc-members:
    :show-inheritance:
 
-mythril.ethereum.interface.rpc.client module
+mythril2.ethereum.interface.rpc.client module
 --------------------------------------------
 
-.. automodule:: mythril.ethereum.interface.rpc.client
+.. automodule:: mythril2.ethereum.interface.rpc.client
    :members:
    :undoc-members:
    :show-inheritance:
 
-mythril.ethereum.interface.rpc.constants module
+mythril2.ethereum.interface.rpc.constants module
 -----------------------------------------------
 
-.. automodule:: mythril.ethereum.interface.rpc.constants
+.. automodule:: mythril2.ethereum.interface.rpc.constants
    :members:
    :undoc-members:
    :show-inheritance:
 
-mythril.ethereum.interface.rpc.exceptions module
+mythril2.ethereum.interface.rpc.exceptions module
 ------------------------------------------------
 
-.. automodule:: mythril.ethereum.interface.rpc.exceptions
+.. automodule:: mythril2.ethereum.interface.rpc.exceptions
    :members:
    :undoc-members:
    :show-inheritance:
 
-mythril.ethereum.interface.rpc.utils module
+mythril2.ethereum.interface.rpc.utils module
 -------------------------------------------
 
-.. automodule:: mythril.ethereum.interface.rpc.utils
+.. automodule:: mythril2.ethereum.interface.rpc.utils
    :members:
    :undoc-members:
    :show-inheritance:
@@ -47,7 +47,7 @@ mythril.ethereum.interface.rpc.utils module
 Module contents
 ---------------
 
-.. automodule:: mythril.ethereum.interface.rpc
+.. automodule:: mythril2.ethereum.interface.rpc
    :members:
    :undoc-members:
    :show-inheritance:

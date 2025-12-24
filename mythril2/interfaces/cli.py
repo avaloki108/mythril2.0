@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """mythril.py: Bug hunting on the Ethereum blockchain
 
-http://www.github.com/ConsenSys/mythril
+http://www.github.com/avaloki108/mythril2.0
 """
 
 import argparse

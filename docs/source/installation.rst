@@ -1,7 +1,7 @@
 Installation and Setup
 ======================
 
-Mythril can be setup using different methods.
+Mythril 2.0 can be set up using different methods.
 
 **************
 PyPI on Windows
@@ -9,7 +9,7 @@ PyPI on Windows
 
 **Prerequisites**
 
-Before installing Mythril on Windows, ensure you have:
+Before installing Mythril 2.0 on Windows, ensure you have:
 
 1. **Python 3.7 or higher**: Download from `python.org <https://www.python.org/downloads/windows/>`_
 2. **Microsoft C++ Build Tools**: Required for compiling native dependencies
@@ -45,11 +45,11 @@ Before installing Mythril on Windows, ensure you have:
    # Upgrade pip
    python -m pip install --upgrade pip
    
-   # Install mythril
-   pip install mythril
+   # Install mythril2
+   pip install mythril2
    
    # Verify installation
-   myth version
+   myth2 version
 
 **Troubleshooting Windows Installation**
 
@@ -67,9 +67,9 @@ Before installing Mythril on Windows, ensure you have:
   
   .. code-block:: batch
   
-     python -m venv mythril_env
-     mythril_env\Scripts\activate
-     pip install mythril
+     python -m venv mythril2_env
+     mythril2_env\Scripts\activate
+     pip install mythril2
 
 **************
 PyPI on Mac OS
@@ -81,7 +81,7 @@ PyPI on Mac OS
    brew upgrade
    brew tap ethereum/ethereum
    brew install solidity
-   pip3 install mythril
+   pip3 install mythril2
 
 
 **************
@@ -101,50 +101,50 @@ PyPI on Ubuntu
    # Install libssl-dev, python3-dev, and python3-pip
    sudo apt install libssl-dev python3-dev python3-pip
 
-   # Install mythril
-   pip3 install mythril
-   myth version
+   # Install mythril2
+   pip3 install mythril2
+   myth2 version
 
 
 ******
 Docker
 ******
 
-All Mythril releases, starting from v0.18.3, are published to DockerHub as Docker images under the :code:`mythril/myth` name.
+All Mythril 2.0 releases are published to DockerHub as Docker images under the :code:`mythril2/myth2` name.
 
 After installing `Docker CE <https://docs.docker.com/install/>`_:
 
    .. code-block:: bash
 
-      # Pull the latest release of mythril/myth
-      $ docker pull mythril/myth
+      # Pull the latest release of mythril2/myth2
+      $ docker pull mythril2/myth2
 
-Use :code:`docker run mythril/myth` the same way you would use the :code:`myth` command
+Use :code:`docker run mythril2/myth2` the same way you would use the :code:`myth2` command
 
    .. code-block:: bash
 
-      docker run mythril/myth --help
-      docker run mythril/myth disassemble -c "0x6060"
+      docker run mythril2/myth2 --help
+      docker run mythril2/myth2 disassemble -c "0x6060"
 
-To pass a file from your host machine to the dockerized Mythril, you must mount its containing folder to the container properly. For :code:`contract.sol` in the current working directory, do:
+To pass a file from your host machine to the dockerized Mythril 2.0, you must mount its containing folder to the container properly. For :code:`contract.sol` in the current working directory, do:
 
    **Linux/macOS:**
    
     .. code-block:: bash
 
-       docker run -v $(pwd):/tmp mythril/myth analyze /tmp/contract.sol
+       docker run -v $(pwd):/tmp mythril2/myth2 analyze /tmp/contract.sol
    
    **Windows (Command Prompt):**
    
    .. code-block:: batch
 
-      docker run -v %cd%:/tmp mythril/myth analyze /tmp/contract.sol
+      docker run -v %cd%:/tmp mythril2/myth2 analyze /tmp/contract.sol
    
    **Windows (PowerShell):**
    
    .. code-block:: powershell
 
-      docker run -v ${PWD}:/tmp mythril/myth analyze /tmp/contract.sol
+      docker run -v ${PWD}:/tmp mythril2/myth2 analyze /tmp/contract.sol
 
 ********************
 Development Setup
@@ -155,8 +155,8 @@ For development on Windows:
 .. code-block:: batch
 
    # Clone the repository
-   git clone https://github.com/ConsenSys/mythril.git
-   cd mythril
+   git clone https://github.com/avaloki108/mythril2.0.git
+   cd mythril2.0
    
    # Create virtual environment
    python -m venv venv

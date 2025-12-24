@@ -20,7 +20,7 @@ sys.path.insert(0, os.path.abspath("../../"))
 
 # -- Project information -----------------------------------------------------
 
-project = "Mythril"
+project = "Mythril 2.0"
 copyright = "2019, ConsenSys Diligence"
 author = "ConsenSys Dilligence"
 

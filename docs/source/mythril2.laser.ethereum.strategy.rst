@@ -1,4 +1,4 @@
-mythril.laser.ethereum.strategy package
+mythril2.laser.ethereum.strategy package
 =======================================
 
 Subpackages
@@ -7,31 +7,31 @@ Subpackages
 .. toctree::
    :maxdepth: 4
 
-   mythril.laser.ethereum.strategy.extensions
+   mythril2.laser.ethereum.strategy.extensions
 
 Submodules
 ----------
 
-mythril.laser.ethereum.strategy.basic module
+mythril2.laser.ethereum.strategy.basic module
 --------------------------------------------
 
-.. automodule:: mythril.laser.ethereum.strategy.basic
+.. automodule:: mythril2.laser.ethereum.strategy.basic
    :members:
    :undoc-members:
    :show-inheritance:
 
-mythril.laser.ethereum.strategy.beam module
+mythril2.laser.ethereum.strategy.beam module
 -------------------------------------------
 
-.. automodule:: mythril.laser.ethereum.strategy.beam
+.. automodule:: mythril2.laser.ethereum.strategy.beam
    :members:
    :undoc-members:
    :show-inheritance:
 
-mythril.laser.ethereum.strategy.concolic module
+mythril2.laser.ethereum.strategy.concolic module
 -----------------------------------------------
 
-.. automodule:: mythril.laser.ethereum.strategy.concolic
+.. automodule:: mythril2.laser.ethereum.strategy.concolic
    :members:
    :undoc-members:
    :show-inheritance:
@@ -39,7 +39,7 @@ mythril.laser.ethereum.strategy.concolic module
 Module contents
 ---------------
 
-.. automodule:: mythril.laser.ethereum.strategy
+.. automodule:: mythril2.laser.ethereum.strategy
    :members:
    :undoc-members:
    :show-inheritance:
