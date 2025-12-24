@@ -1,7 +1,7 @@
 {
   "mcpServers": {
-    "mythril": {
-      "command": "mythril-mcp-server",
+    "mythril2": {
+      "command": "mythril2-mcp-server",
       "args": [],
       "env": {}
     }

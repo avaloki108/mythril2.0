@@ -3,9 +3,9 @@ defaults:
   docker:
     # TODO: Try to replace this with `mythril2/mythx-ci` image. That image is
     # used for new integration testing, and it is build on top of the previous
-    # `mythril/dev_test_environment:0.0.43`, though a bit newer versions, thus
+    # `mythril2/dev_test_environment:0.0.43`, though a bit newer versions, thus
     # there is a chance that it breaks some small things.
-    - image: norhh/mythril-ci
+    - image: norhh/mythril2-ci
 
 version: 2
 jobs:
@@ -52,7 +52,7 @@ jobs:
           no_output_timeout: 10m
           environment:
             LANG: en_US.ASCII
-            MYTHRIL_DIR: '/home/mythril2'
+            MYTHRIL2_DIR: '/home/mythril2'
             INFURA_ID: $INFURA_ID
 
       - store_test_results:
@@ -101,7 +101,7 @@ jobs:
   #              docker build \
   #                --build-arg AWS_ACCESS_KEY_ID=$S3_AWS_ACCESS_KEY_ID \
   #                --build-arg AWS_SECRET_ACCESS_KEY=$S3_AWS_SECRET_ACCESS_KEY \
-  #                --build-arg AWS_DEFAULT_REGION=us-east-1 --rm -t "edelweiss-mythril:latest" . -f Edelweiss/dockerfiles/mythril/Dockerfile
+  #                --build-arg AWS_DEFAULT_REGION=us-east-1 --rm -t "edelweiss-mythril2:latest" . -f Edelweiss/dockerfiles/mythril2/Dockerfile
   #      - run:
   #          name: Run Edelweiss
   #          command: |
@@ -112,12 +112,12 @@ jobs:
   #                -e CIRCLE_BUILD_URL=$CIRCLE_BUILD_URL \
   #                -e CIRCLE_WEBHOOK_URL=$CIRCLE_WEBHOOK_URL \
   #                -e MONGO_URL=$MONGO_URL \
-  #                --rm edelweiss-mythril:latest \
+  #                --rm edelweiss-mythril2:latest \
   #                --timeout 90 \
   #                --output-dir /opt/edelweiss \
   #                --s3 \
   #                --dynamodb \
-  #                --circle-ci CircleCI/mythril.csv \
+  #                --circle-ci CircleCI/mythril2.csv \
   #                --ignore-false-positives $IGNORE_FALSE_POSITIVES \
   #                --ignore-regressions $IGNORE_REGRESSIONS
   pypi_release:
@@ -138,7 +138,7 @@ jobs:
           command: twine upload dist/*
           working_directory: /home/mythril2
 
-  # Release of the mainstream (current stable) version as mythril/myth
+  # Release of the mainstream (current stable) version as mythril2/myth2
   # container.
   dockerhub_release:
     docker:
@@ -151,10 +151,10 @@ jobs:
           command: apk add --no-cache bash
       - run:
           name: Building Docker Image
-          command: ./docker_build_and_deploy.sh mythril/myth
+          command: ./docker_build_and_deploy.sh mythril2/myth2
     resource_class: arm.large
 
-  # Release of the latest development version as mythril/myth-dev container.
+  # Release of the latest development version as mythril2/myth2-dev container.
   dockerhub_dev_release:
     docker:
       - image: docker:latest
@@ -166,7 +166,7 @@ jobs:
           command: apk add --no-cache bash
       - run:
           name: Building Docker Image
-          command: ./docker_build_and_deploy.sh mythril/myth-dev
+          command: ./docker_build_and_deploy.sh mythril2/myth2-dev
     # The resource_class feature allows configuring CPU and RAM resources for each job. Different resource classes are available for different executors. https://circleci.com/docs/2.0/configuration-reference/#resourceclass
     resource_class: arm.xlarge
 

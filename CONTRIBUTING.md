@@ -8,7 +8,7 @@ We already created some templates to make this process easier, but if your issue
 If you have a small question or aren't sure if you should create an issue for your problem/suggestion then you can always hop by on our [Discord server](https://discord.gg/FGMkcU2).
 
 # Coding
-If you want to help out with the development of Mythril 2.0 then you can take a look at our issues or [Waffle board](https://waffle.io/ConsenSys/mythril).
+If you want to help out with the development of Mythril 2.0 then you can take a look at our [issues](https://github.com/avaloki108/mythril2.0/issues).
 
 Before you start working on an issue please stop by on Discord to message a collaborator, this way we can assign you to the issue making sure nobody does double work. We can also provide you with support through Discord if there are any questions during the development process.
 

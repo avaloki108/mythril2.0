@@ -5,7 +5,7 @@ This test only checks whether dumping is successful, not whether the dumped stat
 from types import SimpleNamespace
 
 from mythril2.ethereum import util
-from mythril2.mythril import MythrilAnalyzer, MythrilDisassembler
+from mythril2.core import Mythril2Analyzer, Mythril2Disassembler
 from mythril2.solidity.soliditycontract import EVMContract
 from tests import TESTDATA_INPUTS
 
@@ -15,7 +15,7 @@ def test_generate_graph():
         if input_file.name != "origin.sol.o":
             continue
         contract = EVMContract(input_file.read_text())
-        disassembler = MythrilDisassembler()
+        disassembler = Mythril2Disassembler()
 
         disassembler.contracts.append(contract)
         args = SimpleNamespace(
@@ -39,7 +39,7 @@ def test_generate_graph():
             enable_summaries=False,
             enable_state_merging=False,
         )
-        analyzer = MythrilAnalyzer(
+        analyzer = Mythril2Analyzer(
             disassembler=disassembler,
             strategy="dfs",
             address=(util.get_indexed_address(0)),

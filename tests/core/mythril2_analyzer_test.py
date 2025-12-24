@@ -3,18 +3,18 @@ from types import SimpleNamespace
 from unittest.mock import PropertyMock, patch
 
 from mythril2.analysis.report import Issue
-from mythril2.mythril import MythrilAnalyzer, MythrilDisassembler
+from mythril2.core import Mythril2Analyzer, Mythril2Disassembler
 
 
-@patch("mythril.analysis.report.Issue.add_code_info", return_value=None)
+@patch("mythril2.analysis.report.Issue.add_code_info", return_value=None)
 @patch(
-    "mythril.mythril.mythril_analyzer.fire_lasers",
+    "mythril2.core.mythril2_analyzer.fire_lasers",
     return_value=[Issue("", "", "234", "101", "title", "0x02445")],
 )
-@patch("mythril.mythril.mythril_analyzer.SymExecWrapper")
+@patch("mythril2.core.mythril2_analyzer.SymExecWrapper")
 def test_fire_lasers(mock_sym, mock_fire_lasers, mock_code_info):
     type(mock_sym.return_value).execution_info = PropertyMock(return_value=[])
-    disassembler = MythrilDisassembler(eth=None, solc_version="v0.5.0")
+    disassembler = Mythril2Disassembler(eth=None, solc_version="v0.5.0")
     disassembler.load_from_solidity(
         [
             str(
@@ -45,7 +45,7 @@ def test_fire_lasers(mock_sym, mock_fire_lasers, mock_code_info):
         enable_summaries=False,
         enable_state_merging=False,
     )
-    analyzer = MythrilAnalyzer(disassembler, cmd_args=args)
+    analyzer = Mythril2Analyzer(disassembler, cmd_args=args)
 
     issues = analyzer.fire_lasers(modules=[]).sorted_issues()
     mock_sym.assert_called()

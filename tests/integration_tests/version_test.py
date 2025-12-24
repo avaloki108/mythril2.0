@@ -3,7 +3,7 @@ from utils import output_of
 
 from tests import PROJECT_DIR, TESTDATA
 
-MYTH = str(PROJECT_DIR / "myth")
+MYTH = str(PROJECT_DIR / "myth2")
 test_data = (
     ("version_contract.sol", "v0.7.0", True),
     ("version_contract.sol", "v0.8.0", False),

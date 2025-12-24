@@ -13,7 +13,7 @@ cd mythril2.0
 pip install -e .
 
 # Verify installation
-mythril-mcp-server --help
+mythril2-mcp-server --help
 ```
 
 ## Configuration
@@ -29,8 +29,8 @@ mythril-mcp-server --help
    ```json
    {
      "mcpServers": {
-       "mythril": {
-         "command": "mythril-mcp-server",
+       "mythril2": {
+         "command": "mythril2-mcp-server",
          "args": []
        }
      }
@@ -47,8 +47,8 @@ mythril-mcp-server --help
    ```json
    {
      "mcpServers": {
-       "mythril": {
-         "command": "mythril-mcp-server"
+       "mythril2": {
+         "command": "mythril2-mcp-server"
        }
      }
    }
@@ -142,11 +142,11 @@ If the command isn't found, use the full path:
 
 ```bash
 # Find the path
-which mythril-mcp-server
+which mythril2-mcp-server
 
 # Use in config
 {
-  "command": "/full/path/to/mythril-mcp-server"
+  "command": "/full/path/to/mythril2-mcp-server"
 }
 ```
 
@@ -161,7 +161,7 @@ If analysis is taking too long, try:
 
 On Unix systems:
 ```bash
-chmod +x $(which mythril-mcp-server)
+chmod +x $(which mythril2-mcp-server)
 ```
 
 ## Next Steps

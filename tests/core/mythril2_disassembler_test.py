@@ -1,4 +1,4 @@
-from mythril2.mythril import MythrilDisassembler
+from mythril2.core import Mythril2Disassembler
 
 storage_test = [
     (
@@ -37,9 +37,9 @@ storage_test = [
 """
 @pytest.mark.parametrize("params,ans", storage_test)
 def test_get_data_from_storage(params, ans):
-    config = MythrilConfig()
+    config = Mythril2Config()
     config.set_api_rpc_infura()
-    disassembler = MythrilDisassembler(eth=config.eth, solc_version="0.4.23")
+    disassembler = Mythril2Disassembler(eth=config.eth, solc_version="0.4.23")
     outtext = disassembler.get_state_variable_from_storage(
         "0x76799f77587738bfeef09452df215b63d2cfb08a", params
     ).split("\n")
@@ -55,9 +55,9 @@ storage_test_incorrect_params = [
 
 @pytest.mark.parametrize("params", storage_test_incorrect_params)
 def test_get_data_from_storage_incorrect_params(params):
-    config = MythrilConfig()
+    config = Mythril2Config()
     config.set_api_rpc_infura()
-    disassembler = MythrilDisassembler(eth=config.eth, solc_version="0.4.23")
+    disassembler = Mythril2Disassembler(eth=config.eth, solc_version="0.4.23")
     with pytest.raises(CriticalError):
         disassembler.get_state_variable_from_storage(
             "0x76799f77587738bfeef09452df215b63d2cfb08a", params
@@ -66,4 +66,4 @@ def test_get_data_from_storage_incorrect_params(params):
 
 
 def test_solc_install():
-    MythrilDisassembler(eth=None, solc_version="0.4.19")
+    Mythril2Disassembler(eth=None, solc_version="0.4.19")

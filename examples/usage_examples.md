@@ -89,10 +89,10 @@ You can test the MCP server manually using a simple Python script:
 import json
 import subprocess
 
-def test_mythril_mcp():
+def test_mythril2_mcp():
     # Start the MCP server
     proc = subprocess.Popen(
-        ["mythril-mcp-server"],
+        ["mythril2-mcp-server"],
         stdin=subprocess.PIPE,
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,
@@ -119,7 +119,7 @@ def test_mythril_mcp():
     print(json.loads(response))
 
 if __name__ == "__main__":
-    test_mythril_mcp()
+    test_mythril2_mcp()
 ```
 
 ## Common Use Cases
@@ -161,4 +161,4 @@ pip install py-solc-x
 ```
 
 ### Connection Issues
-Check that the MCP server is properly configured in your client's settings and that the `mythril-mcp-server` command is in your PATH.
+Check that the MCP server is properly configured in your client's settings and that the `mythril2-mcp-server` command is in your PATH.

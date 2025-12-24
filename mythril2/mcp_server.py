@@ -23,7 +23,7 @@ from mcp.types import (
 
 from mythril2.analysis.report import Report
 from mythril2.exceptions import CriticalError, DetectorNotFoundError
-from mythril2.mythril import MythrilAnalyzer, MythrilConfig, MythrilDisassembler
+from mythril2.core import Mythril2Analyzer, Mythril2Config, Mythril2Disassembler
 
 log = logging.getLogger(__name__)
 
@@ -195,7 +195,7 @@ async def analyze_contract_tool(arguments: Dict[str, Any]) -> list[TextContent]:
     
     try:
         # Initialize config
-        config = MythrilConfig()
+        config = Mythril2Config()
         
         if not args.no_onchain_data:
             if args.rpc:
@@ -204,7 +204,7 @@ async def analyze_contract_tool(arguments: Dict[str, Any]) -> list[TextContent]:
                 config.set_api_from_config_path()
         
         # Initialize disassembler
-        disassembler = MythrilDisassembler(
+        disassembler = Mythril2Disassembler(
             eth=config.eth,
             solc_version=solc_version,
             solc_settings_json=None,
@@ -223,7 +223,7 @@ async def analyze_contract_tool(arguments: Dict[str, Any]) -> list[TextContent]:
                 disassembler.load_from_solidity([contract_code])
         
         # Create analyzer
-        analyzer = MythrilAnalyzer(
+        analyzer = Mythril2Analyzer(
             disassembler=disassembler,
             cmd_args=args,
             strategy=args.strategy,
@@ -272,10 +272,10 @@ async def disassemble_contract_tool(arguments: Dict[str, Any]) -> list[TextConte
     
     try:
         # Initialize config
-        config = MythrilConfig()
+        config = Mythril2Config()
         
         # Initialize disassembler
-        disassembler = MythrilDisassembler(
+        disassembler = Mythril2Disassembler(
             eth=config.eth,
             solc_version=None,
             solc_settings_json=None,

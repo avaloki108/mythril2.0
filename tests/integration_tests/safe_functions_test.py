@@ -3,7 +3,7 @@ from utils import output_of
 
 from tests import PROJECT_DIR, TESTDATA
 
-MYTH = str(PROJECT_DIR / "myth")
+MYTH = str(PROJECT_DIR / "myth2")
 test_data = (
     ("suicide.sol", [], "0.5.0"),
     ("overflow.sol", ["balanceOf(address)", "totalSupply()"], "0.5.0"),

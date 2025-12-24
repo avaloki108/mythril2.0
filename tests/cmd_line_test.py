@@ -2,7 +2,7 @@ from subprocess import STDOUT, CalledProcessError, check_output
 
 from tests import PROJECT_DIR, TESTDATA, BaseTestCase
 
-MYTH = str(PROJECT_DIR / "myth")
+MYTH = str(PROJECT_DIR / "myth2")
 
 
 def output_of(command):

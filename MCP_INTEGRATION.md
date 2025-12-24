@@ -43,7 +43,7 @@ Model Context Protocol (MCP) is an open protocol that standardizes how applicati
 pip install -e .
 
 # Verify installation
-mythril-mcp-server --help
+mythril2-mcp-server --help
 ```
 
 ### Basic Configuration
@@ -53,8 +53,8 @@ For **Claude Desktop**, add to `claude_desktop_config.json`:
 ```json
 {
   "mcpServers": {
-    "mythril": {
-      "command": "mythril-mcp-server"
+    "mythril2": {
+      "command": "mythril2-mcp-server"
     }
   }
 }
@@ -190,8 +190,8 @@ Lists all available security detection modules.
 ```json
 {
   "mcpServers": {
-    "mythril": {
-      "command": "mythril-mcp-server",
+    "mythril2": {
+      "command": "mythril2-mcp-server",
       "args": [],
       "env": {
         "MYTHRIL_DIR": "/custom/path"
@@ -210,8 +210,8 @@ Lists all available security detection modules.
 ```json
 {
   "mcpServers": {
-    "mythril": {
-      "command": "mythril-mcp-server"
+    "mythril2": {
+      "command": "mythril2-mcp-server"
     }
   }
 }
@@ -225,9 +225,9 @@ For custom integrations:
 from mcp import ClientSession, StdioServerParameters
 from mcp.client.stdio import stdio_client
 
-async def use_mythril():
+async def use_mythril2():
     server_params = StdioServerParameters(
-        command="mythril-mcp-server",
+        command="mythril2-mcp-server",
         args=[]
     )
     
@@ -308,8 +308,8 @@ Control analysis behavior through tool parameters:
 # GitHub Actions example
 - name: Security Analysis via MCP
   run: |
-    pip install mythril
-    echo "$CONTRACT_CODE" | mythril-mcp-server
+    pip install mythril2
+    echo "$CONTRACT_CODE" | mythril2-mcp-server
 ```
 
 ## Troubleshooting
@@ -321,11 +321,11 @@ Control analysis behavior through tool parameters:
 **Solution:**
 ```bash
 # Find installation path
-which mythril-mcp-server
+which mythril2-mcp-server
 
 # Use full path in config
 {
-  "command": "/home/user/.local/bin/mythril-mcp-server"
+  "command": "/home/user/.local/bin/mythril2-mcp-server"
 }
 ```
 
@@ -352,9 +352,9 @@ which mythril-mcp-server
 **Problem:** MCP client can't connect
 
 **Solution:**
-1. Verify server starts: `mythril-mcp-server`
+1. Verify server starts: `mythril2-mcp-server`
 2. Check client logs for error messages
-3. Verify PATH includes mythril installation
+3. Verify PATH includes mythril2 installation
 4. Try absolute path to executable
 
 ### Missing Dependencies
@@ -385,7 +385,7 @@ pytest tests/
 ### Modifying the Server
 
 Main files:
-- `mythril/mcp_server.py`: Server implementation
+- `mythril2/mcp_server.py`: Server implementation
 - `tests/mcp_server_test.py`: Integration tests
 - `examples/`: Configuration examples
 
@@ -425,7 +425,7 @@ logging.basicConfig(level=logging.DEBUG)
 
 Check stderr output:
 ```bash
-mythril-mcp-server 2>debug.log
+mythril2-mcp-server 2>debug.log
 ```
 
 ## Resources

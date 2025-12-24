@@ -10,7 +10,7 @@ TESTDATA_OUTPUTS_EXPECTED = TESTDATA / "outputs_expected"
 TESTDATA_OUTPUTS_CURRENT = TESTDATA / "outputs_current"
 TESTDATA_OUTPUTS_CURRENT_LASER_RESULT = TESTDATA / "outputs_current_laser_result"
 TESTDATA_OUTPUTS_EXPECTED_LASER_RESULT = TESTDATA / "outputs_expected_laser_result"
-MYTHRIL_DIR = TESTS_DIR / "mythril_dir"
+MYTHRIL2_DIR = TESTS_DIR / "mythril2_dir"
 
 TESTDATA_OUTPUTS_CURRENT.mkdir(exist_ok=True)
 TESTDATA_OUTPUTS_CURRENT_LASER_RESULT.mkdir(exist_ok=True)

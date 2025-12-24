@@ -29,7 +29,7 @@ For any MCP-compatible client, you can use the following basic configuration:
 
 ```json
 {
-  "command": "mythril-mcp-server",
+  "command": "mythril2-mcp-server",
   "args": []
 }
 ```
@@ -49,11 +49,11 @@ If you need to customize the Mythril environment, you can add environment variab
 ```json
 {
   "mcpServers": {
-    "mythril": {
-      "command": "mythril-mcp-server",
+    "mythril2": {
+      "command": "mythril2-mcp-server",
       "args": [],
       "env": {
-        "MYTHRIL_DIR": "/path/to/custom/mythril/dir",
+        "MYTHRIL2_DIR": "/path/to/custom/mythril2/dir",
         "SOLC_VERSION": "0.8.0"
       }
     }
@@ -65,24 +65,24 @@ If you need to customize the Mythril environment, you can add environment variab
 
 ### Server Not Found
 
-If the client can't find `mythril-mcp-server`, specify the full path:
+If the client can't find `mythril2-mcp-server`, specify the full path:
 
 ```json
 {
-  "command": "/usr/local/bin/mythril-mcp-server"
+  "command": "/usr/local/bin/mythril2-mcp-server"
 }
 ```
 
 To find the path, run:
 ```bash
-which mythril-mcp-server
+which mythril2-mcp-server
 ```
 
 ### Permission Issues
 
 On Unix-like systems, ensure the script is executable:
 ```bash
-chmod +x $(which mythril-mcp-server)
+chmod +x $(which mythril2-mcp-server)
 ```
 
 ### Check Server Logs

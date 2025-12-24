@@ -13,7 +13,7 @@ from mythril2.support.lock import LockFile
 log = logging.getLogger(__name__)
 
 
-class MythrilConfig:
+class Mythril2Config:
     """
     The Mythril Analyzer class
     Responsible for setup of the mythril environment
@@ -37,7 +37,7 @@ class MythrilConfig:
         """
 
         try:
-            mythril_dir = os.environ["MYTHRIL_DIR"]
+            mythril_dir = os.environ["MYTHRIL2_DIR"]
         except KeyError:
             mythril_dir = os.path.join(os.path.expanduser("~"), ".mythril2")
 

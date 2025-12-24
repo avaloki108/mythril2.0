@@ -5,5 +5,5 @@ def test_construct_cli_plugin():
     _ = MythrilCLIPlugin()
 
 
-def test_construct_mythril_plugin():
+def test_construct_mythril2_plugin():
     _ = MythrilPlugin

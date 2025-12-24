@@ -31,7 +31,7 @@ def get_global_state():
 
 
 @patch(
-    "mythril.laser.ethereum.instructions.get_call_parameters",
+    "mythril2.laser.ethereum.instructions.get_call_parameters",
     return_value=(
         "0",
         Account(code=Disassembly(code="0x00"), address="0x19"),
@@ -85,7 +85,7 @@ test_data_call = ((0, True), (100, False))
 
 
 @pytest.mark.parametrize("input, success", test_data_call)
-@patch("mythril.laser.ethereum.instructions.get_call_parameters")
+@patch("mythril2.laser.ethereum.instructions.get_call_parameters")
 def test_staticness_call_concrete(f1, input, success):
     # Arrange
     state = get_global_state()
@@ -105,7 +105,7 @@ def test_staticness_call_concrete(f1, input, success):
             instruction.evaluate(state)
 
 
-@patch("mythril.laser.ethereum.instructions.get_call_parameters")
+@patch("mythril2.laser.ethereum.instructions.get_call_parameters")
 def test_staticness_call_symbolic(f1):
     # Arrange
     state = get_global_state()

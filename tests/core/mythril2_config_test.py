@@ -4,11 +4,11 @@ from pathlib import Path
 import pytest
 
 from mythril2.exceptions import CriticalError
-from mythril2.mythril import MythrilConfig
+from mythril2.core import Mythril2Config
 
 
 def test_config_path_dynloading():
-    config = MythrilConfig()
+    config = Mythril2Config()
     config.config_path = str(
         Path(__file__).parent.parent / "testdata/mythril_config_inputs/config.ini"
     )
@@ -31,7 +31,7 @@ rpc_types_tests = [
 
 @pytest.mark.parametrize("rpc_type,host,port,success", rpc_types_tests)
 def test_set_rpc(rpc_type, host, port, success):
-    config = MythrilConfig()
+    config = Mythril2Config()
     if success:
         config._set_rpc(rpc_type)
         assert host in config.eth.host
@@ -43,6 +43,6 @@ def test_set_rpc(rpc_type, host, port, success):
 def test_dynld_config_addition():
     config = ConfigParser()
     config.add_section("defaults")
-    MythrilConfig._add_dynamic_loading_option(config)
+    Mythril2Config._add_dynamic_loading_option(config)
     assert config.has_section("defaults")
     assert config.get("defaults", "dynamic_loading") == "infura"

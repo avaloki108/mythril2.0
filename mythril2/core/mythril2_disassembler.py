@@ -37,7 +37,7 @@ warnings.formatwarning = format_warning
 log = logging.getLogger(__name__)
 
 
-class MythrilDisassembler:
+class Mythril2Disassembler:
     """
     The Mythril Disassembler class
     Responsible for generating disassembly of smart contracts:

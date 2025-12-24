@@ -25,6 +25,6 @@ cp "$SCRIPT_DIR/Counter.sol" .
 git add .
 git commit -m "Initial commit"
 
-# Run pre-commit inside the mock repo while referencing the mythril directory,
+# Run pre-commit inside the mock repo while referencing the mythril2 directory,
 # where the .pre-commit-hooks.yaml is located.
-pre-commit try-repo "$SCRIPT_DIR/../.." mythril --verbose --color=always --all-files
+pre-commit try-repo "$SCRIPT_DIR/../.." mythril2 --verbose --color=always --all-files

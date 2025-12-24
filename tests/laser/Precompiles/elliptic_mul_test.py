@@ -15,9 +15,9 @@ VECTOR_A = decode_hex(
 )
 
 
-@patch("mythril.laser.ethereum.natives.validate_point", return_value=1)
-@patch("mythril.laser.ethereum.natives.bn128.multiply", return_value=1)
-@patch("mythril.laser.ethereum.natives.bn128.normalize")
+@patch("mythril2.laser.ethereum.natives.validate_point", return_value=1)
+@patch("mythril2.laser.ethereum.natives.bn128.multiply", return_value=1)
+@patch("mythril2.laser.ethereum.natives.bn128.normalize")
 def test_ec_mul(f1, f2, f3):
     FQ.fielf_modulus = 128
     a = FQ(val=1)

@@ -20,14 +20,14 @@ from mythril2.support.source_support import Source
 from mythril2.support.start_time import StartTime
 from mythril2.support.support_args import args
 
-from .mythril_disassembler import MythrilDisassembler
+from .mythril2_disassembler import Mythril2Disassembler
 
 log = logging.getLogger(__name__)
 
 LARGE_TIME = 300
 
 
-class MythrilAnalyzer:
+class Mythril2Analyzer:
     """
     The Mythril Analyzer class
     Responsible for the analysis of the smart contracts
@@ -35,14 +35,14 @@ class MythrilAnalyzer:
 
     def __init__(
         self,
-        disassembler: MythrilDisassembler,
+        disassembler: Mythril2Disassembler,
         cmd_args: Namespace,
         strategy: str = "dfs",
         address: Optional[str] = None,
     ):
         """
 
-        :param disassembler: The MythrilDisassembler class
+        :param disassembler: The Mythril2Disassembler class
         :param cmd_args: The command line args Namespace
         :param strategy: Search strategy
         :param address: Address of the contract

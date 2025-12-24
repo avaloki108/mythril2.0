@@ -7,10 +7,10 @@ from mythril2.analysis.symbolic import SymExecWrapper
 from mythril2.disassembler.disassembly import Disassembly
 from mythril2.ethereum import util
 from mythril2.laser.ethereum.transaction import execute_contract_creation
-from mythril2.mythril import MythrilDisassembler
+from mythril2.core import Mythril2Disassembler
 from mythril2.solidity.soliditycontract import SolidityContract
 
-solc_binary = MythrilDisassembler._init_solc_binary("v0.5.0")
+solc_binary = Mythril2Disassembler._init_solc_binary("v0.5.0")
 
 
 def test_create():

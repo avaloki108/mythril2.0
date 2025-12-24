@@ -1,11 +1,11 @@
 from pathlib import Path
 
-from mythril2.mythril import MythrilDisassembler
+from mythril2.core import Mythril2Disassembler
 from mythril2.solidity.soliditycontract import SolidityContract
 from tests import BaseTestCase
 
 TEST_FILES = Path(__file__).parent / "testdata/input_contracts"
-solc_binary = MythrilDisassembler._init_solc_binary("v0.5.0")
+solc_binary = Mythril2Disassembler._init_solc_binary("v0.5.0")
 
 
 class SolidityContractTest(BaseTestCase):

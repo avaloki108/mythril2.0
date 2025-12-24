@@ -25,7 +25,7 @@ from mythril2.exceptions import (
     DetectorNotFoundError,
 )
 from mythril2.laser.ethereum.transaction.symbolic import ACTORS
-from mythril2.mythril import MythrilAnalyzer, MythrilConfig, MythrilDisassembler
+from mythril2.core import Mythril2Analyzer, Mythril2Config, Mythril2Disassembler
 from mythril2.plugin.loader import MythrilPluginLoader
 
 # Initialise core Mythril Component
@@ -669,7 +669,7 @@ def set_config(args: Namespace):
     :param args:
     :return: modified config
     """
-    config = MythrilConfig()
+    config = Mythril2Config()
     if getattr(args, "infura_id", None):
         config.set_api_infura_id(args.infura_id)
     if (args.command in ANALYZE_LIST and not args.no_onchain_data) and not (
@@ -684,7 +684,7 @@ def set_config(args: Namespace):
     return config
 
 
-def load_code(disassembler: MythrilDisassembler, args: Namespace):
+def load_code(disassembler: Mythril2Disassembler, args: Namespace):
     """
     Loads code into disassembly and returns address
     :param disassembler:
@@ -725,7 +725,7 @@ def load_code(disassembler: MythrilDisassembler, args: Namespace):
     return address
 
 
-def print_function_report(myth_disassembler: MythrilDisassembler, report: Report):
+def print_function_report(myth_disassembler: Mythril2Disassembler, report: Report):
     """
     Prints the function report
     :param report: Mythril's report
@@ -749,7 +749,7 @@ def print_function_report(myth_disassembler: MythrilDisassembler, report: Report
 
 
 def execute_command(
-    disassembler: MythrilDisassembler,
+    disassembler: Mythril2Disassembler,
     address: str,
     parser: ArgumentParser,
     args: Namespace,
@@ -785,7 +785,7 @@ def execute_command(
             args.unconstrained_storage
         ) = True
         args.pruning_factor = 1
-        function_analyzer = MythrilAnalyzer(
+        function_analyzer = Mythril2Analyzer(
             strategy=strategy, disassembler=disassembler, address=address, cmd_args=args
         )
         try:
@@ -804,7 +804,7 @@ def execute_command(
             exit_with_error("text", "Analysis error encountered: " + format(e))
 
     elif args.command in ANALYZE_LIST + FOUNDRY_LIST:
-        analyzer = MythrilAnalyzer(
+        analyzer = Mythril2Analyzer(
             strategy=strategy, disassembler=disassembler, address=address, cmd_args=args
         )
 
@@ -892,7 +892,7 @@ def contract_hash_to_address(args: Namespace):
     :param args:
     :return:
     """
-    print(MythrilDisassembler.hash_for_function_signature(args.func_name))
+    print(Mythril2Disassembler.hash_for_function_signature(args.func_name))
     sys.exit()
 
 
@@ -936,7 +936,7 @@ def parse_args_and_execute(parser: ArgumentParser, args: Namespace) -> None:
         sys.exit()
 
     if args.command in CONCOLIC_LIST:
-        _ = MythrilConfig.init_mythril_dir()
+        _ = Mythril2Config.init_mythril_dir()
         with open(args.input) as f:
             concrete_data = json.load(f)
         output_list = concolic_execution(
@@ -954,7 +954,7 @@ def parse_args_and_execute(parser: ArgumentParser, args: Namespace) -> None:
         solc_json = getattr(args, "solc_json", None)
         solv = getattr(args, "solv", None)
         solc_args = getattr(args, "solc_args", None)
-        disassembler = MythrilDisassembler(
+        disassembler = Mythril2Disassembler(
             eth=config.eth,
             solc_version=solv,
             solc_settings_json=solc_json,

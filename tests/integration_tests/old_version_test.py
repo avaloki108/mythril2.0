@@ -5,7 +5,7 @@ from utils import output_of
 
 from tests import PROJECT_DIR, TESTDATA
 
-MYTH = str(PROJECT_DIR / "myth")
+MYTH = str(PROJECT_DIR / "myth2")
 test_data = (
     ("old_origin.sol", 1),
     ("old_version.sol", 2),

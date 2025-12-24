@@ -18,7 +18,7 @@ from mythril2.laser.plugin.plugins import TraceFinderBuilder
 from mythril2.laser.smt import symbol_factory
 from tests import PROJECT_DIR, TESTDATA
 
-MYTH = str(PROJECT_DIR / "myth")
+MYTH = str(PROJECT_DIR / "myth2")
 
 
 def output_of(command):

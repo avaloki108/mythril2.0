@@ -124,7 +124,7 @@ class SignatureDB(object, metaclass=Singleton):
         # here to prevent unnecessary lookups
         self.solidity_sigs: DefaultDict[str, List[str]] = defaultdict(list)
         if path is None:
-            self.path = os.environ.get("MYTHRIL_DIR") or os.path.join(
+            self.path = os.environ.get("MYTHRIL2_DIR") or os.path.join(
                 os.path.expanduser("~"), ".mythril2"
             )
         self.path = os.path.join(self.path, "signatures.db")

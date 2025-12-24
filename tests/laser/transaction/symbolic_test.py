@@ -24,7 +24,7 @@ def _is_contract_creation(_, transaction):
 
 
 @mock.patch(
-    "mythril.laser.ethereum.transaction.symbolic._setup_global_state_for_execution"
+    "mythril2.laser.ethereum.transaction.symbolic._setup_global_state_for_execution"
 )
 def test_execute_message_call(mocked_setup: MagicMock):
     # Arrange
@@ -51,7 +51,7 @@ def test_execute_message_call(mocked_setup: MagicMock):
 
 
 @mock.patch(
-    "mythril.laser.ethereum.transaction.symbolic._setup_global_state_for_execution"
+    "mythril2.laser.ethereum.transaction.symbolic._setup_global_state_for_execution"
 )
 def test_execute_contract_creation(mocked_setup: MagicMock):
     # Arrange

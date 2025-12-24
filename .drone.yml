@@ -37,12 +37,12 @@ steps:
     # run edelewiss tests
     # Temporarily stop Edelweiss drone
     #- edelweiss-cli 
-    #  -p mythril 
+    #  -p mythril2 
     #  --timeout 90 
     #  --output-dir $(pwd) 
     #  --s3 
     #  --dynamodb 
-    #  --circle-ci CircleCI/mythril.csv 
+    #  --circle-ci CircleCI/mythril2.csv 
     #  --ignore-false-positives $IGNORE_FALSE_POSITIVES 
     #  --ignore-regressions $IGNORE_REGRESSIONS
   when:

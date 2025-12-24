@@ -14,14 +14,14 @@ MCP (Model Context Protocol) is an open protocol that standardizes how applicati
 pip install -e .
 ```
 
-This will install all dependencies including the `mcp` package and make the `mythril-mcp-server` command available.
+This will install all dependencies including the `mcp` package and make the `mythril2-mcp-server` command available.
 
 ## Running the Server
 
 The MCP server runs locally and communicates via stdio (standard input/output). To start the server:
 
 ```bash
-mythril-mcp-server
+mythril2-mcp-server
 ```
 
 The server will start and listen for MCP protocol messages on stdin, responding on stdout.
@@ -37,8 +37,8 @@ Add this to your Claude Desktop configuration file (`claude_desktop_config.json`
 ```json
 {
   "mcpServers": {
-    "mythril": {
-      "command": "mythril-mcp-server",
+    "mythril2": {
+      "command": "mythril2-mcp-server",
       "args": []
     }
   }
@@ -51,8 +51,8 @@ In VS Code with Cline extension, add to your MCP settings:
 
 ```json
 {
-  "mythril": {
-    "command": "mythril-mcp-server"
+  "mythril2": {
+    "command": "mythril2-mcp-server"
   }
 }
 ```
@@ -130,7 +130,7 @@ pip install -e .
 ### MCP client can't connect
 
 Verify that:
-1. The `mythril-mcp-server` command is in your PATH
+1. The `mythril2-mcp-server` command is in your PATH
 2. Your MCP client configuration uses the correct command
 3. Check stderr output for error messages
 
@@ -148,7 +148,7 @@ To modify the MCP server:
 1. Edit `/home/runner/work/mythril2.0/mythril2.0/mythril/mcp_server.py`
 2. Test your changes:
    ```bash
-   python -m mythril.mcp_server
+   python -m mythril2.mcp_server
    ```
 
 ## Protocol Compliance
