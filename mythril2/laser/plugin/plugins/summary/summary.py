@@ -14,7 +14,7 @@ log = logging.getLogger(__name__)
 class SymbolicSummary:
     """Symbolic Summary
 
-    A symbolic summary is an awesome construct that allows mythril to record and re-use partial analysis results
+    A symbolic summary is an awesome construct that allows mythril2 to record and re-use partial analysis results
     """
 
     def __init__(

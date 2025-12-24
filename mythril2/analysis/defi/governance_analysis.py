@@ -8,8 +8,8 @@ from dataclasses import dataclass
 from enum import Enum
 
 # Note: IssueAnnotation import commented out to avoid circular dependencies
-# from mythril.analysis.issue_annotation import IssueAnnotation
-# from mythril.laser.ethereum.state.global_state import GlobalState
+# from mythril2.analysis.issue_annotation import IssueAnnotation
+# from mythril2.laser.ethereum.state.global_state import GlobalState
 
 
 class GovernanceType(Enum):

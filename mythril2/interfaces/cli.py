@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""mythril.py: Bug hunting on the Ethereum blockchain
+"""mythril2.py: Bug hunting on the Ethereum blockchain
 
 http://www.github.com/avaloki108/mythril2.0
 """

@@ -10,9 +10,9 @@ import re
 
 # Note: These imports are commented out to avoid circular dependencies
 # When the laser module is refactored, these can be re-enabled
-# from mythril.analysis.issue_annotation import IssueAnnotation
-# from mythril.laser.ethereum.state.global_state import GlobalState
-# from mythril.laser.ethereum.state.machine_state import MachineState
+# from mythril2.analysis.issue_annotation import IssueAnnotation
+# from mythril2.laser.ethereum.state.global_state import GlobalState
+# from mythril2.laser.ethereum.state.machine_state import MachineState
 
 
 class AttackType(Enum):

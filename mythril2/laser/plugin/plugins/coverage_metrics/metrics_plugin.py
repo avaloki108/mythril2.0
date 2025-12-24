@@ -18,7 +18,7 @@ log = logging.getLogger(__name__)
 class CoverageMetricsPluginBuilder(PluginBuilder):
     """CoveragePlugin
     Checks Instruction and branch coverage and puts it to data.json file
-    which appears in the directory in which mythril is run.
+    which appears in the directory in which mythril2 is run.
     """
 
     plugin_default_enabled = True

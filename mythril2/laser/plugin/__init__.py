@@ -7,14 +7,14 @@ Different features that have been implemented in the form of plugins are:
 - benchmarking
 - path pruning
 
-Plugins also provide a way to implement optimisations outside of the mythril code base and to inject them.
+Plugins also provide a way to implement optimisations outside of the mythril2 code base and to inject them.
 The api that laser currently provides is still unstable and will probably change to suit our needs
 as more plugins get developed.
 
 For the implementation of plugins the following modules are of interest:
-- laser.plugins.plugin
-- laser.plugins.signals
-- laser.svm
+- mythril2.laser.plugin.interface
+- mythril2.laser.plugin.signals
+- mythril2.laser.ethereum.svm
 
 Which show the basic interfaces with which plugins are able to interact
 """

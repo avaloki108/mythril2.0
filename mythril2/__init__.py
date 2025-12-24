@@ -5,7 +5,7 @@ import logging
 
 from mythril2.plugin.loader import MythrilPluginLoader
 
-# Accept mythril.VERSION to get mythril's current version number
+# Accept mythril2.VERSION to get mythril2's current version number
 from .__version__ import __version__ as VERSION
 
 log = logging.getLogger(__name__)

@@ -34,7 +34,7 @@ U = TypeVar("U", bound=Union[BitVec, z3.BitVecRef])
 
 
 class SymbolFactory(Generic[T, U]):
-    """A symbol factory provides a default interface for all the components of mythril to create symbols"""
+    """A symbol factory provides a default interface for all the components of mythril2 to create symbols"""
 
     @staticmethod
     def Bool(value: "__builtins__.bool", annotations: Annotations = None) -> T:
@@ -82,7 +82,7 @@ class SymbolFactory(Generic[T, U]):
 class _SmtSymbolFactory(SymbolFactory[SMTBool, BitVec]):
     """
     An implementation of a SymbolFactory that creates symbols using
-    the classes in: mythril.laser.smt
+    the classes in: mythril2.laser.smt
     """
 
     @staticmethod
@@ -146,7 +146,7 @@ class _Z3SymbolFactory(SymbolFactory[z3.BoolRef, z3.BitVecRef]):
         return z3.BitVec(name, size)
 
 
-# This is the instance that other parts of mythril should use
+# This is the instance that other parts of mythril2 should use
 
 # Type hints are not allowed here in 3.5
 # symbol_factory: SymbolFactory = _SmtSymbolFactory()

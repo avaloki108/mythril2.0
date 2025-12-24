@@ -19,7 +19,7 @@ class CoveragePluginBuilder(PluginBuilder):
 class InstructionCoveragePlugin(LaserPlugin):
     """InstructionCoveragePlugin
 
-    This plugin measures the instruction coverage of mythril.
+    This plugin measures the instruction coverage of mythril2.
     The instruction coverage is the ratio between the instructions that have been executed
     and the total amount of instructions.
 

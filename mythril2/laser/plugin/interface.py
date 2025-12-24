@@ -11,7 +11,7 @@ class LaserPlugin:
     when they are loaded.
     Regularly a plugin will introduce several hooks into laser in this function
 
-    Plugins can direct actions by raising Signals defined in mythril.laser.ethereum.plugins.signals
+    Plugins can direct actions by raising Signals defined in mythril2.laser.plugin.signals
     For example, a pruning plugin might raise the PluginSkipWorldState signal.
     """
 

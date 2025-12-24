@@ -20,11 +20,11 @@ class UnsupportedPluginType(Exception):
 class MythrilPluginLoader(object, metaclass=Singleton):
     """MythrilPluginLoader singleton
 
-    This object permits loading MythrilPlugin's
+    This object permits loading MythrilPlugin instances
     """
 
     def __init__(self):
-        log.info("Initializing mythril plugin loader")
+        log.info("Initializing mythril2 plugin loader")
         self.loaded_plugins = []
         self.plugin_args: Dict[str, Dict] = dict()
         self._load_default_enabled()
