@@ -77,8 +77,8 @@ except FileNotFoundError:
 # Load the package's __version__.py module as a dictionary.
 about = {}
 if not VERSION:
-    # The package directory is still "mythril" even though the package name is "mythril2"
-    with open(os.path.join(here, "mythril", "__version__.py")) as f:
+    # The package directory is "mythril2" and the package name is "mythril2"
+    with open(os.path.join(here, "mythril2", "__version__.py")) as f:
         exec(f.read(), about)
 else:
     about["__version__"] = VERSION
