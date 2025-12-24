@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Mythril 2.0
+=======
+# Mythril2
+>>>>>>> 18612cbf (Major Enhancement: Add DeFi Analysis, ML Integration & Windows Support)
 
 <p align="center">
 	<img src="/static/mythril_new.png" height="320px"/>
@@ -7,10 +11,17 @@
 [![Discord](https://img.shields.io/discord/697535391594446898)](https://discord.com/invite/consensys)
 [![PyPI](https://badge.fury.io/py/mythril2.svg)](https://pypi.python.org/pypi/mythril2)
 [![Read the Docs](https://readthedocs.org/projects/mythril-classic/badge/?version=master)](https://mythril-classic.readthedocs.io/en/develop/)
+<<<<<<< HEAD
 [![CircleCI](https://dl.circleci.com/status-badge/img/gh/Consensys/mythril/tree/develop.svg?style=shield&circle-token=fd6738fd235f6c2d8e10234259090e3b05190d0e)](https://dl.circleci.com/status-badge/redirect/gh/Consensys/mythril/tree/develop)
 [![Sonarcloud - Maintainability](https://sonarcloud.io/api/project_badges/measure?project=mythril&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=mythril)
 [![Pypi Installs](https://static.pepy.tech/badge/mythril2)](https://pepy.tech/project/mythril2)
 [![DockerHub Pulls](https://img.shields.io/docker/pulls/mythril2/myth2.svg)](https://cloud.docker.com/u/mythril2/repository/docker/mythril2/myth2)
+=======
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/avaloki108/mythril2.0/tree/develop.svg?style=shield&circle-token=fd6738fd235f6c2d8e10234259090e3b05190d0e)](https://dl.circleci.com/status-badge/redirect/gh/avaloki108/mythril2.0/tree/develop)
+[![Sonarcloud - Maintainability](https://sonarcloud.io/api/project_badges/measure?project=mythril2&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=mythril2)
+[![Pypi Installs](https://static.pepy.tech/badge/mythril2)](https://pepy.tech/project/mythril2)
+[![DockerHub Pulls](https://img.shields.io/docker/pulls/mythril/myth.svg)](https://cloud.docker.com/u/mythril/repository/docker/mythril/myth)
+>>>>>>> 18612cbf (Major Enhancement: Add DeFi Analysis, ML Integration & Windows Support)
 
 Mythril 2.0 is a symbolic-execution-based security analysis tool for EVM bytecode. It detects security vulnerabilities in smart contracts built for Ethereum and other EVM-compatible blockchains.
 

@@ -12,7 +12,15 @@ from mythril2.ethereum.util import get_solc_json
 
 log = logging.getLogger(__name__)
 
-lock = multiprocessing.Lock()
+try:
+    lock = multiprocessing.Lock()
+except OSError:
+    import threading
+
+    log.warning(
+        "Falling back to threading.Lock because multiprocessing semaphores are unavailable"
+    )
+    lock = threading.Lock()
 
 
 def synchronized(sync_lock):
