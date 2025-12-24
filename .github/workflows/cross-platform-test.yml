@@ -1,0 +1,92 @@
+name: Cross-Platform Tests
+
+on:
+  push:
+    branches: [ master, develop ]
+  pull_request:
+    branches: [ master, develop ]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.sha }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        python-version: ['3.7', '3.8', '3.9', '3.10', '3.12']
+        exclude:
+          # Exclude some combinations to reduce CI load
+          - os: macos-latest
+            python-version: '3.7'
+          - os: macos-latest
+            python-version: '3.8'
+    
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 45
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v5
+      with:
+        python-version: ${{ matrix.python-version }}
+    
+    - name: Cache pip dependencies
+      uses: actions/cache@v4
+      with:
+        path: |
+          ~/.cache/pip
+          ~\AppData\Local\pip\Cache
+        key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt', '**/setup.py') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        pip install pytest pytest-mock pytest-cov
+    
+    - name: Install Mythril
+      run: pip install -e .
+    
+    - name: Run cross-platform tests (Windows)
+      if: runner.os == 'Windows'
+      run: python run_tests.py
+      env:
+        MYTHRIL_DIR: ${{ github.workspace }}
+        INFURA_ID: ${{ secrets.INFURA_ID }}
+    
+    - name: Run cross-platform tests (Unix)
+      if: runner.os != 'Windows'
+      run: python run_tests.py
+      env:
+        MYTHRIL_DIR: ${{ github.workspace }}
+        INFURA_ID: ${{ secrets.INFURA_ID }}
+    
+    - name: Run coverage analysis
+      if: matrix.python-version == '3.9' && matrix.os == 'ubuntu-latest'
+      run: python run_coverage.py
+      env:
+        MYTHRIL_DIR: ${{ github.workspace }}
+        INFURA_ID: ${{ secrets.INFURA_ID }}
+    
+    - name: Upload test results
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: test-results-${{ matrix.os }}-${{ matrix.python-version }}
+        path: |
+          **/test-reports/
+          **/coverage_reports/
+    
+    - name: Upload coverage to Codecov
+      if: matrix.python-version == '3.9' && matrix.os == 'ubuntu-latest'
+      uses: codecov/codecov-action@v4
+      with:
+        file: ./coverage_reports/coverage_xml_report.xml
+        flags: unittests
+        name: codecov-umbrella

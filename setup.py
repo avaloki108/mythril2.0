@@ -16,9 +16,9 @@ from setuptools import find_packages, setup
 from setuptools.command.install import install as _install
 
 # Package meta-data.
-NAME = "mythril"
+NAME = "mythril2"
 DESCRIPTION = "Security analysis tool for Ethereum smart contracts"
-URL = "https://github.com/ConsenSys/mythril"
+URL = "https://github.com/avaloki108/mythril2.0"
 AUTHOR = "ConsenSys Dilligence"
 AUTHOR_MAIL = None
 REQUIRES_PYTHON = ">=3.7.0"
@@ -77,8 +77,8 @@ except FileNotFoundError:
 # Load the package's __version__.py module as a dictionary.
 about = {}
 if not VERSION:
-    project_slug = NAME.lower().replace("-", "_").replace(" ", "_")
-    with open(os.path.join(here, project_slug, "__version__.py")) as f:
+    # The package directory is still "mythril" even though the package name is "mythril2"
+    with open(os.path.join(here, "mythril", "__version__.py")) as f:
         exec(f.read(), about)
 else:
     about["__version__"] = VERSION
@@ -133,6 +133,6 @@ setup(
     extras_require=EXTRAS,
     package_data={"mythril.analysis.templates": ["*"], "mythril.support.assets": ["*"]},
     include_package_data=True,
-    entry_points={"console_scripts": ["myth=mythril.interfaces.cli:main"]},
+    entry_points={"console_scripts": ["myth2=mythril.interfaces.cli:main", "mythril2=mythril.interfaces.cli:main"]},
     cmdclass={"verify": VerifyVersionCommand},
 )

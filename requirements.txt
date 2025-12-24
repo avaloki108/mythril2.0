@@ -25,3 +25,11 @@ semantic_version
 z3-solver>=4.8.8.0,<=4.13.4.0
 matplotlib
 certifi>=2020.06.20
+
+joblib==1.5.3
+pandas==2.3.3
+pytz==2025.2
+scikit-learn==1.8.0
+scipy==1.16.3
+threadpoolctl==3.6.0
+tzdata==2025.3
